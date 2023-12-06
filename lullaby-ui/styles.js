@@ -1,6 +1,66 @@
 document.head.innerHTML += `
 <style type="text/tailwindcss">
 @layer components {
+.text-light {
+    @apply text-neutral-800;
+}
+
+.text-light-alt {
+    @apply text-neutral-600;
+}
+
+.bg-light {
+    @apply bg-white;
+}
+
+.bg-light-alt {
+    @apply bg-neutral-100;
+}
+
+.bg-light-hover {
+    @apply bg-neutral-200;
+}
+
+.border-light {
+    @apply border-neutral-300;
+}
+
+.ring-light {
+    @apply ring-neutral-300;
+}
+
+.light {
+    @apply text-light bg-light;
+}
+
+.text-dark {
+    @apply text-neutral-50;
+}
+
+.text-dark-alt {
+    @apply text-neutral-400;
+}
+
+.bg-dark {
+    @apply bg-neutral-950;
+}
+
+.bg-dark-hover {
+    @apply bg-neutral-900;
+}
+
+.border-dark {
+    @apply border-neutral-800;
+}
+
+.ring-dark {
+    @apply ring-neutral-800;
+}
+
+.dark {
+    @apply text-dark bg-dark;
+}
+
 
 .scrollbar::-webkit-scrollbar {
     @apply w-4;
@@ -29,39 +89,23 @@ document.head.innerHTML += `
 }
 
 .dark-scrollbar::-webkit-scrollbar-track {
-    @apply bg-neutral-950;
-}
-
-.text {
-    @apply text-neutral-800;
-}
-
-.bg {
-    @apply bg-white;
-}
-
-.text-dark {
-    @apply text-neutral-50;
-}
-
-.bg-dark {
-    @apply bg-neutral-950;
+    @apply bg-dark;
 }
 
 .button {
-    @apply text-neutral-800 bg-neutral-100 border border-neutral-300 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-200 h-fit w-fit;
+    @apply text-light bg-light-alt border border-light rounded px-4 py-1 shadow hover:shadow-md hover:bg-light-hover h-fit w-fit;
 }
 
 .dark-button {
-    @apply text-neutral-50 font-semibold bg-neutral-950 border border-neutral-800 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-900 h-fit w-fit;
+    @apply text-dark bg-dark font-semibold border border-dark rounded px-4 py-1 shadow hover:shadow-md hover:bg-dark-hover h-fit w-fit;
 }
 
 .link {
-    @apply text-neutral-800 cursor-pointer relative h-fit w-fit;
+    @apply text-light cursor-pointer relative h-fit w-fit;
 }
 
 .link:before {
-    @apply bg-neutral-900;
+    @apply bg-dark-hover;
     content: "";
     position: absolute;
     left: 0;
@@ -76,11 +120,11 @@ document.head.innerHTML += `
 }
 
 .dark-link {
-    @apply text-neutral-50 cursor-pointer relative h-fit w-fit;
+    @apply text-dark cursor-pointer relative h-fit w-fit;
 }
 
 .dark-link:before {
-    @apply bg-neutral-50;
+    @apply bg-light-alt;
     content: "";
     position: absolute;
     left: 0;
@@ -95,19 +139,19 @@ document.head.innerHTML += `
 }
 
 .badget {
-    @apply text-neutral-700 text-sm bg-neutral-100 border border-neutral-300 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-200 hover:shadow-md h-fit w-fit;
+    @apply text-light bg-light-alt text-sm border border-light rounded-full px-3 py-[2.5px] shadow hover:bg-light-hover hover:shadow-md h-fit w-fit;
 }
 
 .dark-badget {
-    @apply text-neutral-50 text-sm bg-neutral-950 border border-neutral-800 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-900 hover:shadow-md h-fit w-fit;
+    @apply text-dark bg-dark text-sm border border-dark rounded-full px-3 py-[2.5px] shadow hover:bg-dark-hover hover:shadow-md h-fit w-fit;
 }
 
 .title {
-    @apply text-neutral-800 text-3xl font-semibold;
+    @apply text-light text-3xl font-semibold;
 }
 
 .dark-title {
-    @apply text-neutral-50 text-3xl font-semibold;
+    @apply text-light text-3xl font-semibold;
 }
 
 .modal-container {
@@ -123,15 +167,15 @@ document.head.innerHTML += `
 }
 
 .modal-content {
-    @apply text-neutral-700 bg-white rounded z-10 p-6 shadow;
+    @apply text-light bg-light rounded z-10 p-6 shadow border border-light;
 }
 
 .dark-modal-content {
-    @apply text-neutral-50 bg-neutral-950 rounded z-10 p-6 shadow border border-neutral-600;
+    @apply text-dark bg-dark rounded z-10 p-6 shadow border border-dark;
 }
 
 .card {
-    @apply text-neutral-700 bg-white flex flex-col gap-4 p-6 shadow border border-neutral-300 rounded shadow;
+    @apply text-light bg-light flex flex-col gap-4 p-6 shadow border border-light rounded shadow;
 }
 
 .card-header {
@@ -139,11 +183,11 @@ document.head.innerHTML += `
 }
 
 .card-title {
-    @apply text-2xl font-semibold text-neutral-800;
+    @apply text-light text-2xl font-semibold;
 }
 
 .card-desc {
-    @apply text-neutral-600;
+    @apply text-light-alt;
 }
 
 .card-content {
@@ -155,15 +199,15 @@ document.head.innerHTML += `
 }
 
 .dark-card {
-    @apply bg-neutral-950 text-neutral-100 flex flex-col gap-4 p-6 shadow border border-neutral-800 rounded shadow;
+    @apply text-dark bg-dark flex flex-col gap-4 p-6 shadow border border-dark rounded shadow;
 }
 
 .dark-card-title {
-    @apply text-2xl font-semibold text-neutral-50;
+    @apply text-dark text-2xl font-semibold;
 }
 
 .dark-card-desc {
-    @apply text-neutral-400;
+    @apply text-dark-alt;
 }
 
 .neon-red-xs {
@@ -575,7 +619,7 @@ document.head.innerHTML += `
 }
 
 .dropzone {
-    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-300 border-dashed rounded-lg cursor-pointer bg-neutral-100 shadow hover:shadow-xl hover:bg-neutral-200;
+    @apply text-light bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-xl hover:bg-light-hover;
 }
 
 .dropzone-content {
@@ -583,57 +627,56 @@ document.head.innerHTML += `
 }
 
 .dropzone-icon {
-    @apply w-10 h-10 text-neutral-700;
+    @apply text-light-alt w-10 h-10;
 }
 
 .dropzone-title {
-    @apply text-sm text-neutral-800;
+    @apply text-light text-sm;
 }
 
 .dropzone-desc {
-    @apply text-xs text-neutral-600;
+    @apply text-light-alt text-xs;
 }
 
 .dropzone-input {
-    @apply file:hidden text-xs text-neutral-700 text-center flex justify-center items-center w-[125px];
+    @apply text-light-alt file:hidden text-xs text-center flex justify-center items-center w-[125px];
 }
 
 .dark-dropzone {
-    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-800 border-dashed rounded-lg cursor-pointer bg-neutral-950 shadow hover:shadow-xl hover:bg-neutral-900;
+    @apply text-dark bg-dark flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-xl hover:bg-dark-hover;
 }
 
 .dark-dropzone-icon {
-    @apply w-10 h-10 text-neutral-100;
+    @apply text-dark-alt w-10 h-10;
 }
 
 .dark-dropzone-title {
-    @apply text-sm text-neutral-50;
+    @apply text-dark text-sm;
 }
 
 .dark-dropzone-desc {
-    @apply text-xs text-neutral-300;
+    @apply text-dark-alt text-xs;
 }
 
 .dark-dropzone-input {
-    @apply file:hidden text-xs text-neutral-200 text-center flex justify-center items-center w-[125px];
+    @apply text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px];
 }
 
 .input {
-    @apply text-neutral-700 bg-neutral-100 border border-neutral-300 rounded focus:outline-none focus:ring-1 focus:ring-neutral-300 px-2 py-1 shadow h-fit;
+    @apply text-light bg-light-alt border border-light rounded focus:outline-none focus:ring-1 focus:ring-light px-2 py-1 shadow h-fit;
 }
 
 .dark-input {
-    @apply placeholder-neutral-500 text-neutral-50 bg-neutral-950 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-800 px-2 py-1 shadow h-fit;
+    @apply text-dark bg-dark placeholder-neutral-500 border border-dark rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow h-fit;
 }
 
 .input-file {
-    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-200 file:h-full file:text-neutral-700 file:cursor-pointer text-neutral-500 bg-neutral-100 rounded border border-neutral-300 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-300 shadow pr-2 h-fit;
+    @apply text-light-alt bg-light-alt file:px-3 file:py-1 file:border-none file:bg-light-hover file:h-full file:text-light-alt file:cursor-pointer rounded border border-light p-0 m-0 cursor-pointer hover:ring-1 hover:ring-light shadow pr-2 h-fit;
 }
 
 .dark-input-file {
-    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-950 file:h-full file:text-neutral-50 file:cursor-pointer text-neutral-500 bg-neutral-900 rounded border border-neutral-600 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-800 shadow pr-2 h-fit;
+    @apply text-dark-alt bg-dark-hover file:px-3 file:py-1 file:border-none file:bg-dark file:h-full file:text-dark file:cursor-pointer rounded border border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:ring-dark shadow pr-2 h-fit;
 }
-
 
 }
 </style>
