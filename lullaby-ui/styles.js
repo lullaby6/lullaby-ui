@@ -42,19 +42,19 @@ document.head.innerHTML += `
 }
 
 .bg-dark {
-    @apply bg-[#18181b];
+    @apply bg-[#111114];
 }
 
 .bg-dark-hover {
-    @apply bg-neutral-800;
+    @apply bg-[#151519];
 }
 
 .border-dark {
-    @apply border-neutral-700;
+    @apply border-[#1E1E23];
 }
 
 .ring-dark {
-    @apply ring-neutral-700;
+    @apply ring-[#1E1E23];
 }
 
 .dark {
