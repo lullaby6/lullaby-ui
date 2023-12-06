@@ -42,25 +42,24 @@ document.head.innerHTML += `
 }
 
 .bg-dark {
-    @apply bg-neutral-950;
+    @apply bg-[#18181b];
 }
 
 .bg-dark-hover {
-    @apply bg-neutral-900;
+    @apply bg-neutral-800;
 }
 
 .border-dark {
-    @apply border-neutral-800;
+    @apply border-neutral-700;
 }
 
 .ring-dark {
-    @apply ring-neutral-800;
+    @apply ring-neutral-700;
 }
 
 .dark {
     @apply text-dark bg-dark;
 }
-
 
 .scrollbar::-webkit-scrollbar {
     @apply w-4;
