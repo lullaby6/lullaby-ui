@@ -131,7 +131,7 @@ document.head.innerHTML += `
 }
 
 .card {
-    @apply text-neutral-700 flex flex-col gap-4 p-6 shadow border border-neutral-300 rounded shadow;
+    @apply text-neutral-700 bg-white flex flex-col gap-4 p-6 shadow border border-neutral-300 rounded shadow;
 }
 
 .card-header {
