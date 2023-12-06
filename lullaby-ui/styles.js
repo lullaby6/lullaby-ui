@@ -623,7 +623,7 @@ document.head.innerHTML += `
 }
 
 .dark-input {
-    @apply text-neutral-50 bg-neutral-900 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-600 px-2 py-1 shadow h-fit;
+    @apply placeholder-neutral-500 text-neutral-50 bg-neutral-900 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-600 px-2 py-1 shadow h-fit;
 }
 
 .input-file {
