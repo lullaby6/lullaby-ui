@@ -6,7 +6,7 @@ document.head.innerHTML += `
             }
 
             .scrollbar::-webkit-scrollbar-thumb{
-                @apply bg-neutral-800;
+                @apply bg-neutral-400;
                 border: 4px solid transparent;
                 background-clip: padding-box;
                 border-radius: 9999px;
@@ -20,12 +20,8 @@ document.head.innerHTML += `
                 @apply w-4;
             }
 
-            .dark {
-                @apply bg-neutral-900 text-neutral-50;
-            }
-
             .dark-scrollbar::-webkit-scrollbar-thumb{
-                @apply bg-neutral-100;
+                @apply bg-neutral-600;
                 border: 5px solid transparent;
                 background-clip: padding-box;
                 border-radius: 9999px;
@@ -33,6 +29,10 @@ document.head.innerHTML += `
 
             .dark-scrollbar::-webkit-scrollbar-track {
                 @apply bg-neutral-900;
+            }
+
+            .bg-dark {
+                @apply bg-neutral-900 text-neutral-50;
             }
 
             .button {
