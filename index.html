@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection UI</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script src="./lullabyui.js"></script>
+
+</head>
+<body class="scrollbar">
+    <div class="p-10 flex flex-col gap-10">
+
+        <!-- Button -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Button</h1>
+
+            <div class="flex gap-4">
+                <button class="button">Button</button>
+                <button class="dark-button">Button</button>
+            </div>
+
+        </div>
+
+        <!-- Link -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Link</h1>
+
+            <div class="flex gap-4">
+                <a href="#hola" class="link">Link</a>
+                <a href="#hola" class="link px-1">Link</a>
+                <a href="#hola" class="link px-2">Link</a>
+                <a href="#hola" class="link text-lg">Link</a>
+                <a href="#hola" class="link text-xl">Link</a>
+                <a href="#hola" class="link text-2xl">Link</a>
+            </div>
+
+        </div>
+
+        <!-- Badget -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Badget</h1>
+
+            <div class="flex gap-4">
+                <p class="badget">Badget</p>
+                <p class="dark-badget">Badget</p>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Modal</h1>
+
+            <div class="flex gap-4">
+                <div class="modal">
+                    <button class="button modal-open">Open Modal</button>
+
+                    <div class="modal-container">
+                        <div class="modal-overlay modal-close opacity-50"></div>
+                        <div class="modal-content">
+                            <h1>Modal</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal">
+                    <button class="dark-button modal-open">Open Modal</button>
+
+                    <div class="modal-container">
+                        <div class="modal-overlay modal-close opacity-50"></div>
+                        <div class="dark-modal-content">
+                            <h1>Modal</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Card</h1>
+
+            <div class="flex gap-4">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">Card</h1>
+                        <h1 class="card-desc"> Card desc</h1>
+                    </div>
+                    <div class="card-content">
+                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                    </div>
+                    <div class="card-footer justify-between">
+                        <button class="button">Cancel</button>
+                        <button class="dark-button">Button</button>
+                    </div>
+                </div>
+
+                <div class="dark-card">
+                    <div class="card-header">
+                        <h1 class="dark-card-title">Card</h1>
+                        <h1 class="dark-card-desc"> Card desc</h1>
+                    </div>
+                    <div class="card-content">
+                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                    </div>
+                    <div class="card-footer justify-between">
+                        <button class="dark-button">Cancel</button>
+                        <button class="button">Button</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
