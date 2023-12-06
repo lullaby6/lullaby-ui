@@ -618,6 +618,23 @@ document.head.innerHTML += `
     @apply file:hidden text-xs text-neutral-200 text-center flex justify-center items-center w-[125px];
 }
 
+.input {
+    @apply text-neutral-700 bg-neutral-100 border border-neutral-300 rounded focus:outline-none focus:ring-1 focus:ring-neutral-300 px-2 py-1 shadow h-fit;
+}
+
+.dark-input {
+    @apply text-neutral-50 bg-neutral-900 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-600 px-2 py-1 shadow h-fit;
+}
+
+.input-file {
+    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-200 file:h-full file:text-neutral-700 file:cursor-pointer text-neutral-500 bg-neutral-100 rounded border border-neutral-300 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-300 shadow pr-2 h-fit;
+}
+
+.dark-input-file {
+    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-900 file:h-full file:text-neutral-50 file:cursor-pointer text-neutral-500 bg-neutral-800 rounded border border-neutral-600 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-600 shadow pr-2 h-fit;
+}
+
+
 }
 </style>
 `
