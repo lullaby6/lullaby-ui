@@ -105,6 +105,10 @@ document.head.innerHTML += `
                 @apply w-full h-full bg-black absolute left-0 top-0 opacity-25 z-10;
             }
 
+            .modal-blurred-overlay {
+                @apply w-full h-full bg-black absolute left-0 top-0 z-10 backdrop-blur-3xl;
+            }
+
             .modal-content {
                 @apply text-neutral-700 bg-white rounded z-10 p-6 shadow;
             }
@@ -147,6 +151,30 @@ document.head.innerHTML += `
 
             .dark-card-desc {
                 @apply text-neutral-400;
+            }
+
+            .neon-red-xs {
+                box-shadow: 0 0 4px 2.5px theme('colors.red.600');
+            }
+
+            .neon-red-sm {
+                box-shadow: 0 0 8px 2.5px theme('colors.red.600');
+            }
+
+            .neon-red-md {
+                box-shadow: 0 0 12px 2.5px theme('colors.red.600');
+            }
+
+            .neon-red-lg {
+                box-shadow: 0 0 16px 2.5px theme('colors.red.600');
+            }
+
+            .neon-red-xl {
+                box-shadow: 0 0 20px 2.5px theme('colors.red.600');
+            }
+
+            .neon-red-2xl {
+                box-shadow: 0 0 24px 2.5px theme('colors.red.600');
             }
         }
     </style>
