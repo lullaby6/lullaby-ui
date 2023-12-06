@@ -36,11 +36,11 @@ document.head.innerHTML += `
             }
 
             .button {
-                @apply text-neutral-600 font-semibold bg-neutral-100 border border-neutral-300 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-200 hover:text-neutral-700 h-fit w-fit;
+                @apply text-neutral-700 bg-neutral-100 border border-neutral-300 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-200 h-fit w-fit;
             }
 
             .dark-button {
-                @apply text-neutral-50 font-semibold bg-neutral-900 border border-neutral-600 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-800 h-fit w-fit;
+                @apply text-neutral-50 font-semibold bg-neutral-900 border border-neutral-700 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-800 h-fit w-fit;
             }
 
             .link {
@@ -82,11 +82,11 @@ document.head.innerHTML += `
             }
 
             .badget {
-                @apply text-neutral-600 text-sm font-semibold bg-neutral-100 border border-neutral-300 rounded-full px-2 shadow hover:bg-neutral-200 hover:text-neutral-700 hover:shadow-md h-fit w-fit;
+                @apply text-neutral-700 text-sm bg-neutral-100 border border-neutral-300 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-200 hover:shadow-md h-fit w-fit;
             }
 
             .dark-badget {
-                @apply text-neutral-50 text-sm font-semibold bg-neutral-900 border border-neutral-600 rounded-full px-2 shadow hover:bg-neutral-700 hover:shadow-md h-fit w-fit;
+                @apply text-neutral-50 text-sm bg-neutral-900 border border-neutral-700 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-800 hover:shadow-md h-fit w-fit;
             }
 
             .title {
@@ -138,7 +138,7 @@ document.head.innerHTML += `
             }
 
             .dark-card {
-                @apply bg-neutral-900 text-neutral-100 flex flex-col gap-4 p-6 shadow border border-neutral-600 rounded shadow;
+                @apply bg-neutral-900 text-neutral-100 flex flex-col gap-4 p-6 shadow border border-neutral-700 rounded shadow;
             }
 
             .dark-card-title {
