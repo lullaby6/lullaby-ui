@@ -29,7 +29,7 @@ document.head.innerHTML += `
 }
 
 .dark-scrollbar::-webkit-scrollbar-track {
-    @apply bg-neutral-900;
+    @apply bg-neutral-950;
 }
 
 .text {
@@ -45,7 +45,7 @@ document.head.innerHTML += `
 }
 
 .bg-dark {
-    @apply bg-neutral-900;
+    @apply bg-neutral-950;
 }
 
 .button {
@@ -53,7 +53,7 @@ document.head.innerHTML += `
 }
 
 .dark-button {
-    @apply text-neutral-50 font-semibold bg-neutral-900 border border-neutral-700 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-800 h-fit w-fit;
+    @apply text-neutral-50 font-semibold bg-neutral-950 border border-neutral-800 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-900 h-fit w-fit;
 }
 
 .link {
@@ -61,7 +61,7 @@ document.head.innerHTML += `
 }
 
 .link:before {
-    @apply bg-neutral-800;
+    @apply bg-neutral-900;
     content: "";
     position: absolute;
     left: 0;
@@ -99,7 +99,7 @@ document.head.innerHTML += `
 }
 
 .dark-badget {
-    @apply text-neutral-50 text-sm bg-neutral-900 border border-neutral-700 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-800 hover:shadow-md h-fit w-fit;
+    @apply text-neutral-50 text-sm bg-neutral-950 border border-neutral-800 rounded-full px-3 py-[2.5px] shadow hover:bg-neutral-900 hover:shadow-md h-fit w-fit;
 }
 
 .title {
@@ -127,7 +127,7 @@ document.head.innerHTML += `
 }
 
 .dark-modal-content {
-    @apply text-neutral-50 bg-neutral-900 rounded z-10 p-6 shadow border border-neutral-600;
+    @apply text-neutral-50 bg-neutral-950 rounded z-10 p-6 shadow border border-neutral-600;
 }
 
 .card {
@@ -155,7 +155,7 @@ document.head.innerHTML += `
 }
 
 .dark-card {
-    @apply bg-neutral-900 text-neutral-100 flex flex-col gap-4 p-6 shadow border border-neutral-700 rounded shadow;
+    @apply bg-neutral-950 text-neutral-100 flex flex-col gap-4 p-6 shadow border border-neutral-800 rounded shadow;
 }
 
 .dark-card-title {
@@ -599,7 +599,7 @@ document.head.innerHTML += `
 }
 
 .dark-dropzone {
-    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-700 border-dashed rounded-lg cursor-pointer bg-neutral-900 shadow hover:shadow-xl hover:bg-neutral-800;
+    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-800 border-dashed rounded-lg cursor-pointer bg-neutral-950 shadow hover:shadow-xl hover:bg-neutral-900;
 }
 
 .dark-dropzone-icon {
@@ -623,7 +623,7 @@ document.head.innerHTML += `
 }
 
 .dark-input {
-    @apply placeholder-neutral-500 text-neutral-50 bg-neutral-900 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-600 px-2 py-1 shadow h-fit;
+    @apply placeholder-neutral-500 text-neutral-50 bg-neutral-950 border border-neutral-600 rounded focus:outline-none focus:ring-1 focus:ring-neutral-800 px-2 py-1 shadow h-fit;
 }
 
 .input-file {
@@ -631,7 +631,7 @@ document.head.innerHTML += `
 }
 
 .dark-input-file {
-    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-900 file:h-full file:text-neutral-50 file:cursor-pointer text-neutral-500 bg-neutral-800 rounded border border-neutral-600 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-600 shadow pr-2 h-fit;
+    @apply file:px-3 file:py-1 file:border-none file:bg-neutral-950 file:h-full file:text-neutral-50 file:cursor-pointer text-neutral-500 bg-neutral-900 rounded border border-neutral-600 p-0 m-0 cursor-pointer hover:ring-1 hover:ring-neutral-800 shadow pr-2 h-fit;
 }
 
 
