@@ -577,26 +577,3 @@ document.head.innerHTML += `
 }
 </style>
 `
-
-window.addEventListener('DOMContentLoaded', () => {
-    const modal = document.querySelectorAll('.modal');
-    modal.forEach(modal => {
-        modal.setAttribute('x-data', "{ show_modal: false }");
-
-        const modalOpen = modal.querySelectorAll('.modal-open');
-        modalOpen.forEach(modalOpen => {
-            modalOpen.setAttribute('x-on:click', "show_modal = true");
-        })
-
-        const modalClose = modal.querySelectorAll('.modal-close');
-        modalClose.forEach(modalClose => {
-            modalClose.setAttribute('x-on:click', "show_modal = false");
-        })
-
-        const modalContainer = modal.querySelector('.modal-container');
-        if (modalContainer) {
-            modalContainer.setAttribute("x-show", "show_modal")
-            modalContainer.setAttribute("x-transition.opacity", "")
-        }
-    })
-})
