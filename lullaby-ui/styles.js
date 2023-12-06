@@ -618,7 +618,7 @@ document.head.innerHTML += `
 }
 
 .dropzone {
-    @apply text-light bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-xl hover:bg-light-hover;
+    @apply text-light bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-light-hover;
 }
 
 .dropzone-content {
@@ -642,7 +642,7 @@ document.head.innerHTML += `
 }
 
 .dark-dropzone {
-    @apply text-dark bg-dark flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-xl hover:bg-dark-hover;
+    @apply text-dark bg-dark flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-dark-hover;
 }
 
 .dark-dropzone-icon {
