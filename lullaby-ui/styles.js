@@ -574,6 +574,50 @@ document.head.innerHTML += `
     box-shadow: 0 0 24px 2.5px theme('colors.amber.600');
 }
 
+.dropzone {
+    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-300 border-dashed rounded-lg cursor-pointer bg-neutral-100 shadow hover:shadow-xl hover:bg-neutral-200;
+}
+
+.dropzone-content {
+    @apply flex flex-col items-center justify-center py-6 gap-3;
+}
+
+.dropzone-icon {
+    @apply w-10 h-10 text-neutral-700;
+}
+
+.dropzone-title {
+    @apply text-sm text-neutral-800;
+}
+
+.dropzone-desc {
+    @apply text-xs text-neutral-600;
+}
+
+.dropzone-input {
+    @apply file:hidden text-xs text-neutral-700 text-center flex justify-center items-center w-[125px];
+}
+
+.dark-dropzone {
+    @apply flex flex-col items-center justify-center w-[500px] h-64 border-2 border-neutral-700 border-dashed rounded-lg cursor-pointer bg-neutral-900 shadow hover:shadow-xl hover:bg-neutral-800;
+}
+
+.dark-dropzone-icon {
+    @apply w-10 h-10 text-neutral-100;
+}
+
+.dark-dropzone-title {
+    @apply text-sm text-neutral-50;
+}
+
+.dark-dropzone-desc {
+    @apply text-xs text-neutral-300;
+}
+
+.dark-dropzone-input {
+    @apply file:hidden text-xs text-neutral-200 text-center flex justify-center items-center w-[125px];
+}
+
 }
 </style>
 `

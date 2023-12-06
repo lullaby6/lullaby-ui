@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 
-    <script src="./lullaby-ui/alpine.js"></script>
-    <script src="./lullaby-ui/tailwind.js"></script>
+    <script src="./lullaby-ui/main.js"></script>
+    <script src="./lullaby-ui/styles.js"></script>
 
 </head>
 <body class="scrollbar">
@@ -145,6 +145,34 @@
                     <button class="dark-button neon-cyan-xl hover:neon-cyan-xl">Button</button>
                     <button class="dark-button neon-emerald-2xl hover:neon-emerald-2xl">Button</button>
                 </div>
+
+            </div>
+
+        </div>
+
+        <!-- Dropzone -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Dropzone</h1>
+
+            <div class="flex gap-4">
+
+                <label for="dropzone" class="dropzone">
+                    <div class="dropzone-content">
+                        <svg class="dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        <p class="dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                        <p class="dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                        <input id="dropzone" type="file" class="dropzone-input" />
+                    </div>
+                </label>
+
+                <label for="dropzone-2" class="dark-dropzone">
+                    <div class="dropzone-content">
+                        <svg class="dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        <p class="dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                        <p class="dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                        <input id="dropzone-2" type="file" class="dark-dropzone-input" />
+                    </div>
+                </label>
 
             </div>
 
