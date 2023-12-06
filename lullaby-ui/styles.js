@@ -34,7 +34,7 @@ document.head.innerHTML += `
 }
 
 .text-dark {
-    @apply text-neutral-50;
+    @apply text-neutral-200;
 }
 
 .text-dark-alt {
