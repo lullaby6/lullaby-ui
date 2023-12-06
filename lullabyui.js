@@ -31,12 +31,24 @@ document.head.innerHTML += `
                 @apply bg-neutral-900;
             }
 
+            .text {
+                @apply text-neutral-800;
+            }
+
+            .bg {
+                @apply bg-white;
+            }
+
+            .text-dark {
+                @apply text-neutral-50;
+            }
+
             .bg-dark {
-                @apply bg-neutral-900 text-neutral-50;
+                @apply bg-neutral-900;
             }
 
             .button {
-                @apply text-neutral-700 bg-neutral-100 border border-neutral-300 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-200 h-fit w-fit;
+                @apply text-neutral-800 bg-neutral-100 border border-neutral-300 rounded px-4 py-1 shadow hover:shadow-md hover:bg-neutral-200 h-fit w-fit;
             }
 
             .dark-button {
