@@ -728,7 +728,7 @@ document.head.innerHTML += `
     height: 0px;
     border-style: solid;
     border-width: 0 7.5px 7.5px 7.5px;
-    border-color: transparent transparent #60606B transparent;
+    border-color: transparent transparent #45454C transparent;
     transform: rotate(135deg);
     translate: 4.5px -5px;
 }
