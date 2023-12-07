@@ -51,7 +51,7 @@ document.head.innerHTML += `
 }
 
 .bg-dark-hover {
-    @apply bg-[#151519];
+    @apply bg-[#17171C];
 }
 
 .border-dark {
