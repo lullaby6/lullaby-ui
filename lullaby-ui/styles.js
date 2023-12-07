@@ -1,6 +1,11 @@
 document.head.innerHTML += `
 <style type="text/tailwindcss">
 @layer components {
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
 .text-light {
     @apply text-neutral-800;
 }
@@ -34,7 +39,7 @@ document.head.innerHTML += `
 }
 
 .text-dark {
-    @apply text-neutral-200;
+    @apply text-neutral-100;
 }
 
 .text-dark-alt {
