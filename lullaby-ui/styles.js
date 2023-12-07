@@ -34,7 +34,7 @@ document.head.innerHTML += `
     @apply ring-neutral-300;
 }
 
-.light {
+.light-colors {
     @apply text-light bg-light;
 }
 
@@ -62,7 +62,7 @@ document.head.innerHTML += `
     @apply ring-[#202026];
 }
 
-.dark {
+.dark-colors {
     @apply text-dark bg-dark;
 }
 
@@ -94,6 +94,14 @@ document.head.innerHTML += `
 
 .dark-scrollbar::-webkit-scrollbar-track {
     @apply bg-dark;
+}
+
+.theme-switcher {
+    @apply text-light bg-light-alt border border-light rounded-full p-1 cursor-pointer shadow hover:bg-light-hover hover:shadow-md dark:text-dark dark:bg-dark dark:border-dark dark:hover:bg-dark-hover select-none;
+}
+
+.theme-switcher svg {
+    @apply w-5 h-5;
 }
 
 .button {

@@ -33,9 +33,9 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     const inputAutoWidth = document.querySelectorAll('.input-auto-width');
-    inputAutoWidth.forEach(input => {
-        input.addEventListener('input', () => {
-            input.style.width = `${input.value.length}ch`;
-        })
-    })
+    // inputAutoWidth.forEach(input => {
+    //     input.addEventListener('input', () => {
+    //         input.style.width = `${input.value.length}ch`;
+    //     })
+    // })
 })
