@@ -13,7 +13,7 @@
     <script src="./lullaby-ui/main.js"></script>
     <script src="./lullaby-ui/styles.js"></script>
 </head>
-<body class="scrollbar">
+<body class="scrollbar dark">
     <div class="p-10 flex flex-col gap-10">
 
         <h1 class="text-clifford font-bold text-4xl">Lullaby UI</h1>
@@ -190,13 +190,41 @@
 
         </div>
 
-        <!-- Input text -->
+        <!-- Input file -->
         <div class="flex flex-col gap-2">
             <h1 class="title">Input file</h1>
 
             <div class="flex gap-4">
                 <input type="file" class="input-file" placeholder="Input">
                 <input type="file" class="dark-input-file" placeholder="Input">
+            </div>
+
+        </div>
+
+        <!-- Textarea -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Textarea</h1>
+
+            <div class="flex gap-4">
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
+                <div class="textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
+                </div>
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
+                <div class="dark-textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Input auto width -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Input auto width</h1>
+
+            <div class="flex gap-4">
+                <input type="text" class="input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                <input type="text" class="dark-input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
             </div>
 
         </div>

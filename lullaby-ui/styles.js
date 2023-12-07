@@ -677,6 +677,62 @@ document.head.innerHTML += `
     @apply text-dark-alt bg-dark-hover file:px-3 file:py-1 file:border-none file:bg-dark file:h-full file:text-dark file:cursor-pointer rounded border border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:ring-dark shadow pr-2 h-fit;
 }
 
+.input-auto-width {
+    @apply min-w-[15ch] w-[15ch];
+}
+
+.textarea {
+    @apply text-light bg-light-alt border border-light relative rounded focus:outline-none focus:ring-1 focus:ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px];;
+}
+
+.dark-textarea {
+    @apply text-dark bg-dark border border-dark placeholder:text-dark-alt rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px];
+}
+
+.textarea-resize{
+    @apply relative w-fit h-fit;
+}
+
+.textarea-resize .textarea::-webkit-resizer{
+}
+
+.textarea-resize::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 7.5px 7.5px 7.5px;
+    border-color: transparent transparent #aaa transparent;
+    transform: rotate(135deg);
+    translate: 4.5px -5px;
+}
+
+.dark-textarea-resize{
+    @apply relative w-fit h-fit;
+}
+
+.dark-textarea-resize .dark-textarea::-webkit-resizer{
+}
+
+.dark-textarea-resize::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 7.5px 7.5px 7.5px;
+    border-color: transparent transparent #60606B transparent;
+    transform: rotate(135deg);
+    translate: 4.5px -5px;
+}
+
 }
 </style>
 `

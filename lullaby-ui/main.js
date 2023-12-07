@@ -31,4 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
             ['x-transition.opacity', ''],
         ])
     })
+
+    const inputAutoWidth = document.querySelectorAll('.input-auto-width');
+    inputAutoWidth.forEach(input => {
+        input.addEventListener('input', () => {
+            input.style.width = `${input.value.length}ch`;
+        })
+    })
 })
