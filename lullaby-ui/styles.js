@@ -55,11 +55,11 @@ document.head.innerHTML += `
 }
 
 .border-dark {
-    @apply border-[#1E1E23];
+    @apply border-[#202026];
 }
 
 .ring-dark {
-    @apply ring-[#1E1E23];
+    @apply ring-[#202026];
 }
 
 .dark {
