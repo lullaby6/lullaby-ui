@@ -50,6 +50,10 @@ document.head.innerHTML += `
     @apply bg-[#111114];
 }
 
+.bg-dark-alt {
+    @apply bg-[#131316];
+}
+
 .bg-dark-hover {
     @apply bg-[#17171C];
 }
@@ -109,7 +113,7 @@ document.head.innerHTML += `
 }
 
 .dark-button {
-    @apply text-dark bg-dark font-semibold border border-dark rounded px-4 py-1 shadow hover:shadow-md hover:bg-dark-hover h-fit w-fit;
+    @apply text-dark bg-dark-alt font-semibold border border-dark rounded px-4 py-1 shadow hover:shadow-md hover:bg-dark-hover h-fit w-fit;
 }
 
 .link {
@@ -655,7 +659,7 @@ document.head.innerHTML += `
 }
 
 .dark-dropzone {
-    @apply text-dark bg-dark flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-dark-hover;
+    @apply text-dark bg-dark-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-dark-hover;
 }
 
 .dark-dropzone-icon {
@@ -679,7 +683,7 @@ document.head.innerHTML += `
 }
 
 .dark-input {
-    @apply text-dark bg-dark placeholder-neutral-500 border border-dark rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow h-fit;
+    @apply text-dark bg-dark-alt placeholder-neutral-500 border border-dark rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow h-fit;
 }
 
 .input-file {
@@ -699,7 +703,7 @@ document.head.innerHTML += `
 }
 
 .dark-textarea {
-    @apply text-dark bg-dark border border-dark placeholder:text-dark-alt rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px];
+    @apply text-dark bg-dark-alt border border-dark placeholder:text-dark-alt rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px];
 }
 
 .textarea-resize{
