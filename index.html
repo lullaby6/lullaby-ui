@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- <script src="./cdn.plugin.js"></script> -->
     <script src="./cdn.js"></script>
 </head>
 <body class="scrollbar dark:dark-colors dark:dark-scrollbar transition-colors">
@@ -27,8 +26,8 @@
 
             <div class="flex gap-4">
                 <div class="theme-switcher" x-on:click="darkMode = !darkMode">
-                    <svg x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
-                    <svg x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
+                    <svg class="theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
+                    <svg class="theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
                 </div>
             </div>
 
@@ -49,13 +48,23 @@
         <div class="flex flex-col gap-2">
             <h1 class="title">Link</h1>
 
-            <div class="flex gap-4">
-                <a href="#hola" class="link">Link</a>
-                <a href="#hola" class="link px-1">Link</a>
-                <a href="#hola" class="link px-2">Link</a>
-                <a href="#hola" class="link text-lg">Link</a>
-                <a href="#hola" class="link text-xl">Link</a>
-                <a href="#hola" class="link text-2xl">Link</a>
+            <div class="flex flex-col gap-4">
+                <div class="flex gap-4 card flex-row">
+                    <a href="#hola" class="link">Link</a>
+                    <a href="#hola" class="link px-1">Link</a>
+                    <a href="#hola" class="link px-2">Link</a>
+                    <a href="#hola" class="link text-lg">Link</a>
+                    <a href="#hola" class="link text-xl">Link</a>
+                    <a href="#hola" class="link text-2xl">Link</a>
+                </div>
+                <div class="flex gap-4 dark-card flex-row">
+                    <a href="#hola" class="dark-link">Link</a>
+                    <a href="#hola" class="dark-link px-1">Link</a>
+                    <a href="#hola" class="dark-link px-2">Link</a>
+                    <a href="#hola" class="dark-link text-lg">Link</a>
+                    <a href="#hola" class="dark-link text-xl">Link</a>
+                    <a href="#hola" class="dark-link text-2xl">Link</a>
+                </div>
             </div>
 
         </div>
@@ -67,6 +76,94 @@
             <div class="flex gap-4">
                 <p class="badget">Badget</p>
                 <p class="dark-badget">Badget</p>
+            </div>
+
+        </div>
+
+        <!-- Input -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Input</h1>
+
+            <div class="flex gap-4">
+                <input type="text" class="input" placeholder="Input">
+                <input type="text" class="dark-input" placeholder="Input">
+            </div>
+
+        </div>
+
+        <!-- Input file -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Input file</h1>
+
+            <div class="flex gap-4">
+                <input type="file" class="input-file" placeholder="Input">
+                <input type="file" class="dark-input-file" placeholder="Input">
+            </div>
+
+        </div>
+
+        <!-- Input auto width -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Input auto width</h1>
+
+            <div class="flex gap-4">
+                <input type="text" class="input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                <input type="text" class="dark-input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+            </div>
+
+        </div>
+
+        <!-- Textarea -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Textarea</h1>
+
+            <div class="flex gap-4">
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
+                <div class="textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
+                </div>
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
+                <div class="dark-textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Card</h1>
+
+            <div class="flex gap-4">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">Card</h1>
+                        <h1 class="card-desc">Card description</h1>
+                    </div>
+                    <div class="card-content">
+                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                    </div>
+                    <div class="card-footer justify-between">
+                        <button class="button">Cancel</button>
+                        <button class="dark-button">Button</button>
+                    </div>
+                </div>
+
+                <div class="dark-card">
+                    <div class="card-header">
+                        <h1 class="dark-card-title">Card</h1>
+                        <h1 class="dark-card-desc">Card description</h1>
+                    </div>
+                    <div class="card-content">
+                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                    </div>
+                    <div class="card-footer justify-between">
+                        <button class="dark-button">Cancel</button>
+                        <button class="button">Button</button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -110,55 +207,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="modal">
-                    <button class="button modal-open">Open Blurred Modal</button>
-
-                    <div class="modal-container">
-                        <div class="modal-blurred-overlay modal-close opacity-50"></div>
-                        <div class="modal-content">
-                            <h1>Modal</h1>
-                        </div>
-                    </div>
-                </div>  -->
             </div>
-        </div>
-
-        <!-- Card -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Card</h1>
-
-            <div class="flex gap-4">
-
-                <div class="card">
-                    <div class="card-header">
-                        <h1 class="card-title">Card</h1>
-                        <h1 class="card-desc">Card description</h1>
-                    </div>
-                    <div class="card-content">
-                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                    </div>
-                    <div class="card-footer justify-between">
-                        <button class="button">Cancel</button>
-                        <button class="dark-button">Button</button>
-                    </div>
-                </div>
-
-                <div class="dark-card">
-                    <div class="card-header">
-                        <h1 class="dark-card-title">Card</h1>
-                        <h1 class="dark-card-desc">Card description</h1>
-                    </div>
-                    <div class="card-content">
-                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                    </div>
-                    <div class="card-footer justify-between">
-                        <button class="dark-button">Cancel</button>
-                        <button class="button">Button</button>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
 
         <!-- Neon -->
@@ -167,12 +216,14 @@
 
             <div class="flex gap-4">
                 <div class="dark-card flex-row gap-10">
-                    <button class="dark-button neon-red-xs hover:neon-red-xs">Button</button>
-                    <button class="dark-button neon-blue-sm hover:neon-blue-sm">Button</button>
-                    <button class="dark-button neon-green-md hover:neon-green-md">Button</button>
-                    <button class="dark-button neon-yellow-lg hover:neon-yellow-lg">Button</button>
-                    <button class="dark-button neon-cyan-xl hover:neon-cyan-xl">Button</button>
-                    <button class="dark-button neon-emerald-2xl hover:neon-emerald-2xl">Button</button>
+                    <button class="dark-button neon-xs-red-400 hover:neon-xs-red-400">Button</button>
+                    <button class="dark-button neon-xs-red-600 hover:neon-xs-red-600">Button</button>
+                    <button class="dark-button neon-xs-red-900 hover:neon-xs-red-900">Button</button>
+                    <button class="dark-button neon-sm-blue-600 hover:neon-sm-blue-600">Button</button>
+                    <button class="dark-button neon-md-green-600 hover:neon-md-green-600">Button</button>
+                    <button class="dark-button neon-lg-yellow-600 hover:neon-lg-yellow-600">Button</button>
+                    <button class="dark-button neon-xl-cyan-600 hover:neon-xl-cyan-600">Button</button>
+                    <button class="dark-button neon-2xl-emerald-600 hover:neon-2xl-emerald-600">Button</button>
                 </div>
 
             </div>
@@ -203,56 +254,6 @@
                     </div>
                 </label>
 
-            </div>
-
-        </div>
-
-        <!-- Input -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Input</h1>
-
-            <div class="flex gap-4">
-                <input type="text" class="input" placeholder="Input">
-                <input type="text" class="dark-input" placeholder="Input">
-            </div>
-
-        </div>
-
-        <!-- Input file -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Input file</h1>
-
-            <div class="flex gap-4">
-                <input type="file" class="input-file" placeholder="Input">
-                <input type="file" class="dark-input-file" placeholder="Input">
-            </div>
-
-        </div>
-
-        <!-- Textarea -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Textarea</h1>
-
-            <div class="flex gap-4">
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
-                <div class="textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
-                </div>
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
-                <div class="dark-textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Input auto width -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Input auto width</h1>
-
-            <div class="flex gap-4">
-                <input type="text" class="input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-                <input type="text" class="dark-input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
             </div>
 
         </div>
