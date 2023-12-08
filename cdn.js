@@ -1,156 +1,156 @@
 let lullabyUIComponents = {
-    '.lu-flex-center': {
+    '.ly-flex-center': {
         "@apply flex justify-center items-center": {},
     },
-    '.lu-text-light': {
+    '.ly-text-light': {
         "@apply text-neutral-800": {},
     },
-    '.lu-text-light-alt': {
+    '.ly-text-light-alt': {
         "@apply text-neutral-600": {},
     },
-    '.lu-bg-light': {
+    '.ly-bg-light': {
         "@apply bg-white": {},
     },
-    '.lu-bg-light-alt': {
+    '.ly-bg-light-alt': {
         "@apply bg-neutral-100": {},
     },
-    '.lu-bg-light-hover': {
+    '.ly-bg-light-hover': {
         "@apply bg-neutral-200": {},
     },
-    '.lu-border-light': {
+    '.ly-border-light': {
         "@apply border-neutral-300": {},
     },
-    '.lu-ring-light': {
+    '.ly-ring-light': {
         "@apply ring-neutral-300": {},
     },
-    '.lu-light-colors': {
-        "@apply lu-text-light lu-bg-light": {},
+    '.ly-light-colors': {
+        "@apply ly-text-light ly-bg-light": {},
     },
-    '.lu-text-dark': {
+    '.ly-text-dark': {
         "@apply text-neutral-100": {},
     },
-    '.lu-text-dark-alt': {
+    '.ly-text-dark-alt': {
         "@apply text-neutral-400": {},
     },
-    '.lu-bg-dark': {
+    '.ly-bg-dark': {
         "@apply bg-[#111114]": {},
     },
-    '.lu-bg-dark-alt': {
+    '.ly-bg-dark-alt': {
         "@apply bg-[#131316]": {},
     },
-    '.lu-bg-dark-hover': {
+    '.ly-bg-dark-hover': {
         "@apply bg-[#1B1B21]": {},
     },
-    '.lu-border-dark': {
+    '.ly-border-dark': {
         "@apply border-[#222228]": {},
     },
-    '.lu-ring-dark': {
+    '.ly-ring-dark': {
         "@apply ring-[#222228]": {},
     },
-    '.lu-dark-colors': {
-        "@apply lu-text-dark lu-bg-dark": {},
+    '.ly-dark-colors': {
+        "@apply ly-text-dark ly-bg-dark": {},
     },
 
-    '.lu-scrollbar::-webkit-scrollbar': {
+    '.ly-scrollbar::-webkit-scrollbar': {
         "@apply w-4": {},
     },
-    '.lu-scrollbar::-webkit-scrollbar-thumb': {
+    '.ly-scrollbar::-webkit-scrollbar-thumb': {
         "@apply bg-neutral-400": {},
         "border": "4px solid transparent",
         "border-radius": "9999px",
         "background-clip": "padding-box",
     },
-    '.lu-scrollbar::-webkit-scrollbar-track': {
+    '.ly-scrollbar::-webkit-scrollbar-track': {
         "@apply bg-white": {},
     },
 
-    '.lu-dark-scrollbar::-webkit-scrollbar': {
+    '.ly-dark-scrollbar::-webkit-scrollbar': {
         "@apply w-4": {},
     },
-    '.lu-dark-scrollbar::-webkit-scrollbar-thumb': {
+    '.ly-dark-scrollbar::-webkit-scrollbar-thumb': {
         "@apply bg-neutral-600": {},
         "border": "4px solid transparent",
         "border-radius": "9999px",
         "background-clip": "padding-box",
     },
-    '.lu-dark-scrollbar::-webkit-scrollbar-track': {
-        "@apply lu-bg-dark": {},
+    '.ly-dark-scrollbar::-webkit-scrollbar-track': {
+        "@apply ly-bg-dark": {},
     },
 
-    '.lu-theme-switcher': {
-        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded-full p-1 cursor-pointer shadow hover:lu-bg-light-hover hover:shadow-md dark:lu-text-dark dark:lu-bg-dark dark:lu-border-dark dark:hover:lu-bg-dark-hover select-none": {},
+    '.ly-theme-switcher': {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded-full p-1 cursor-pointer shadow hover:ly-bg-light-hover hover:shadow-md dark:ly-text-dark dark:ly-bg-dark dark:ly-border-dark dark:hover:ly-bg-dark-hover select-none": {},
     },
-    '.lu-theme-switcher .theme-switcher-icon': {
+    '.ly-theme-switcher .theme-switcher-icon': {
         "@apply w-5 h-5": {},
     },
 
-    '.lu-button': {
-        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded px-4 py-1 shadow hover:shadow-md hover:lu-bg-light-hover h-fit w-fit": {},
+    '.ly-button': {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded px-4 py-1 shadow hover:shadow-md hover:ly-bg-light-hover h-fit w-fit": {},
     },
-    '.lu-dark-button': {
-        "@apply lu-text-dark lu-bg-dark-alt font-semibold border lu-border-dark rounded px-4 py-1 shadow hover:shadow-md hover:lu-bg-dark-hover h-fit w-fit": {},
-    },
-
-    '.lu-link': {
-        "@apply lu-text-light cursor-pointer relative h-fit w-fit before:content-[''] before:lu-bg-dark-hover before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
-    },
-    '.lu-dark-link': {
-        "@apply lu-text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:lu-bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
+    '.ly-dark-button': {
+        "@apply ly-text-dark ly-bg-dark-alt font-semibold border ly-border-dark rounded px-4 py-1 shadow hover:shadow-md hover:ly-bg-dark-hover h-fit w-fit": {},
     },
 
-    '.lu-badget': {
-        "@apply lu-text-light lu-bg-light-alt text-sm border lu-border-light rounded-full px-3 py-[2.5px] shadow hover:lu-bg-light-hover hover:shadow-md h-fit w-fit": {}
+    '.ly-link': {
+        "@apply ly-text-light cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-dark-hover before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
     },
-    '.lu-dark-badget': {
-        "@apply lu-text-dark lu-bg-dark-alt text-sm border lu-border-dark rounded-full px-3 py-[2.5px] shadow hover:lu-bg-dark-hover hover:shadow-md h-fit w-fit": {}
+    '.ly-dark-link': {
+        "@apply ly-text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
     },
 
-    '.lu-title': {
-        "@apply lu-text-light text-3xl font-semibold": {},
+    '.ly-badget': {
+        "@apply ly-text-light ly-bg-light-alt text-sm border ly-border-light rounded-full px-3 py-[2.5px] shadow hover:ly-bg-light-hover hover:shadow-md h-fit w-fit": {}
+    },
+    '.ly-dark-badget': {
+        "@apply ly-text-dark ly-bg-dark-alt text-sm border ly-border-dark rounded-full px-3 py-[2.5px] shadow hover:ly-bg-dark-hover hover:shadow-md h-fit w-fit": {}
+    },
+
+    '.ly-title': {
+        "@apply ly-text-light text-3xl font-semibold": {},
         "text-wrap": "balance",
 
     },
-    '.lu-dark-title': {
-        "@apply lu-text-dark text-3xl font-semibold": {},
+    '.ly-dark-title': {
+        "@apply ly-text-dark text-3xl font-semibold": {},
         "text-wrap": "balance",
     },
 
-    '.lu-text': {
-        "@apply lu-text-light text-base": {},
+    '.ly-text': {
+        "@apply ly-text-light text-base": {},
         "text-wrap": "pretty",
 
     },
-    '.lu-dark-text': {
-        "@apply lu-text-dark text-base": {},
+    '.ly-dark-text': {
+        "@apply ly-text-dark text-base": {},
         "text-wrap": "pretty",
     },
 
-    '.lu-input': {
-        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded focus:outline-none focus:ring-1 focus:lu-ring-light px-2 py-1 shadow h-fit": {}
+    '.ly-input': {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow h-fit": {}
     },
-    '.lu-dark-input': {
-        "@apply lu-text-dark lu-bg-dark-alt border lu-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:lu-ring-dark px-2 py-1 shadow h-fit": {}
-    },
-
-    '.lu-input-file': {
-        "@apply lu-text-light-alt lu-bg-light-alt file:px-3 file:py-1 file:border-none file:lu-bg-light-hover file:h-full file:lu-text-light-alt file:cursor-pointer rounded border lu-border-light p-0 m-0 cursor-pointer hover:ring-1 hover:lu-ring-light shadow pr-2 h-fit": {}
-    },
-    '.lu-dark-input-file': {
-        "@apply lu-text-dark-alt lu-bg-dark-hover file:px-3 file:py-1 file:border-none file:lu-bg-dark file:h-full file:lu-text-dark file:cursor-pointer rounded border lu-border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:lu-ring-dark shadow pr-2 h-fit": {}
+    '.ly-dark-input': {
+        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
     },
 
-    '.lu-input-auto-width': {
+    '.ly-input-file': {
+        "@apply ly-text-light-alt ly-bg-light-alt file:px-3 file:py-1 file:border-none file:ly-bg-light-hover file:h-full file:ly-text-light-alt file:cursor-pointer rounded border ly-border-light p-0 m-0 cursor-pointer hover:ring-1 hover:ly-ring-light shadow pr-2 h-fit": {}
+    },
+    '.ly-dark-input-file': {
+        "@apply ly-text-dark-alt ly-bg-dark-hover file:px-3 file:py-1 file:border-none file:ly-bg-dark file:h-full file:ly-text-dark file:cursor-pointer rounded border ly-border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:ly-ring-dark shadow pr-2 h-fit": {}
+    },
+
+    '.ly-input-auto-width': {
         "@apply min-w-[15ch] w-[15ch]": {}
     },
 
-    ".lu-textarea": {
-        "@apply lu-text-light lu-bg-light-alt border lu-border-light relative rounded focus:outline-none focus:ring-1 focus:lu-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+    ".ly-textarea": {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light relative rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
     },
-    ".lu-textarea-resize": {
+    ".ly-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {}
     },
-    ".lu-textarea-resize .lu-textarea::-webkit-resizer": {},
-    ".lu-textarea-resize::before": {
+    ".ly-textarea-resize .ly-textarea::-webkit-resizer": {},
+    ".ly-textarea-resize::before": {
         "content": "",
         "position": "absolute",
         "z-index": 10,
@@ -164,15 +164,15 @@ let lullabyUIComponents = {
         "transform": "rotate(135deg)",
         "translate": "4.5px -5px",
     },
-    ".lu-dark-textarea": {
-        "@apply lu-text-dark lu-bg-dark-alt border lu-border-dark placeholder:lu-text-dark-alt rounded focus:outline-none focus:ring-1 focus:lu-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+    ".ly-dark-textarea": {
+        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder:ly-text-dark-alt rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
     },
-    ".lu-dark-textarea-resize": {
+    ".ly-dark-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {},
     },
-    ".lu-dark-textarea-resize .lu-dark-textarea::-webkit-resizer": {
+    ".ly-dark-textarea-resize .ly-dark-textarea::-webkit-resizer": {
     },
-    ".lu-dark-textarea-resize::before": {
+    ".ly-dark-textarea-resize::before": {
         "content": "",
         "position": "absolute",
         "z-index": 10,
@@ -187,82 +187,82 @@ let lullabyUIComponents = {
         "translate": "4.5px -5px",
     },
 
-    ".lu-card": {
-        "@apply lu-text-light lu-bg-light flex flex-col gap-4 p-6 shadow border lu-border-light rounded shadow w-fit h-fit": {},
+    ".ly-card": {
+        "@apply ly-text-light ly-bg-light flex flex-col gap-4 p-6 shadow border ly-border-light rounded shadow w-fit h-fit": {},
     },
-    ".lu-card-header": {
+    ".ly-card-header": {
         "@apply flex flex-col w-full": {},
     },
-    ".lu-card-title": {
-        "@apply lu-text-light text-2xl font-semibold": {},
+    ".ly-card-title": {
+        "@apply ly-text-light text-2xl font-semibold": {},
     },
-    ".lu-card-desc": {
+    ".ly-card-desc": {
         " @apply text-light-alt": {},
     },
-    ".lu-card-content": {
+    ".ly-card-content": {
         "@apply w-full": {},
     },
-    ".lu-card-footer": {
+    ".ly-card-footer": {
         "@apply flex w-full": {},
     },
-    ".lu-dark-card": {
-        "@apply lu-text-dark lu-bg-dark flex flex-col gap-4 p-6 shadow border lu-border-dark rounded shadow w-fit h-fit": {},
+    ".ly-dark-card": {
+        "@apply ly-text-dark ly-bg-dark flex flex-col gap-4 p-6 shadow border ly-border-dark rounded shadow w-fit h-fit": {},
     },
-    ".lu-dark-card-title": {
-        "@apply lu-text-dark text-2xl font-semibold": {},
+    ".ly-dark-card-title": {
+        "@apply ly-text-dark text-2xl font-semibold": {},
     },
-    ".lu-dark-card-desc": {
-        "@apply lu-text-dark-alt": {},
+    ".ly-dark-card-desc": {
+        "@apply ly-text-dark-alt": {},
     },
 
-    ".lu-dropzone": {
-        "@apply lu-text-light lu-bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 lu-border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:lu-bg-light-hover": {},
+    ".ly-dropzone": {
+        "@apply ly-text-light ly-bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 ly-border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:ly-bg-light-hover": {},
     },
-    ".lu-dropzone-content": {
+    ".ly-dropzone-content": {
         "@apply flex flex-col items-center justify-center py-6 gap-3": {},
     },
-    ".lu-dropzone-icon": {
-        "@apply lu-text-light-alt w-10 h-10": {},
+    ".ly-dropzone-icon": {
+        "@apply ly-text-light-alt w-10 h-10": {},
     },
-    ".lu-dropzone-title": {
-        "@apply lu-text-light text-sm": {},
+    ".ly-dropzone-title": {
+        "@apply ly-text-light text-sm": {},
     },
-    ".lu-dropzone-desc": {
-        "@apply lu-text-light-alt text-xs": {},
+    ".ly-dropzone-desc": {
+        "@apply ly-text-light-alt text-xs": {},
     },
-    ".lu-dropzone-input": {
-        "@apply lu-text-light-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
+    ".ly-dropzone-input": {
+        "@apply ly-text-light-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
-    ".lu-dark-dropzone": {
-        "@apply lu-text-dark lu-bg-dark-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 lu-border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:lu-bg-dark-hover": {},
+    ".ly-dark-dropzone": {
+        "@apply ly-text-dark ly-bg-dark-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 ly-border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:ly-bg-dark-hover": {},
     },
-    ".lu-dark-dropzone-icon": {
-        "@apply lu-text-dark-alt w-10 h-10": {},
+    ".ly-dark-dropzone-icon": {
+        "@apply ly-text-dark-alt w-10 h-10": {},
     },
-    ".lu-dark-dropzone-title": {
-        "@apply lu-text-dark text-sm": {},
+    ".ly-dark-dropzone-title": {
+        "@apply ly-text-dark text-sm": {},
     },
-    ".lu-dark-dropzone-desc": {
-        "@apply lu-text-dark-alt text-xs": {},
+    ".ly-dark-dropzone-desc": {
+        "@apply ly-text-dark-alt text-xs": {},
     },
-    ".lu-dark-dropzone-input": {
-        "@apply lu-text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
+    ".ly-dark-dropzone-input": {
+        "@apply ly-text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
 
-    ".lu-modal-container": {
+    ".ly-modal-container": {
         "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-10": {},
     },
-    ".lu-modal-overlay": {
-        "@apply w-full h-full lu-bg-dark absolute left-0 top-0 opacity-25 z-10": {},
+    ".ly-modal-overlay": {
+        "@apply w-full h-full ly-bg-dark absolute left-0 top-0 opacity-25 z-10": {},
     },
-    ".lu-modal-blurred-overlay": {
-        "@apply w-full h-full lu-bg-dark absolute left-0 top-0 z-10 backdrop-blur-3xl": {},
+    ".ly-modal-blurred-overlay": {
+        "@apply w-full h-full ly-bg-dark absolute left-0 top-0 opacity-25 z-10 backdrop-blur-3xl": {},
     },
-    ".lu-modal-content": {
-        "@apply lu-text-light lu-bg-light rounded z-10 p-6 shadow border lu-border-light": {},
+    ".ly-modal-content": {
+        "@apply ly-text-light ly-bg-light rounded z-10 p-6 shadow border ly-border-light": {},
     },
-    ".lu-dark-modal-content": {
-        "@apply lu-text-dark lu-bg-dark rounded z-10 p-6 shadow border lu-border-dark": {},
+    ".ly-dark-modal-content": {
+        "@apply ly-text-dark ly-bg-dark rounded z-10 p-6 shadow border ly-border-dark": {},
     },
 
     ...genNeonComponents()
@@ -287,7 +287,7 @@ function genNeonComponents() {
     Object.entries(sizes).forEach(([size, sizeValue]) => {
         colors.forEach(color => {
             colorValues.forEach(colorValue => {
-                const neonComponentName = `.lu-neon-${size}-${color}-${colorValue}`
+                const neonComponentName = `.ly-neon-${size}-${color}-${colorValue}`
                 const neonComponentValue = {
                     "box-shadow": `0 0 ${sizeValue}px 2.5px theme('colors.${color}.${colorValue}')`,
                 }
