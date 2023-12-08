@@ -1,7 +1,4 @@
-document.head.innerHTML += `
-<style type="text/tailwindcss">
-@layer components {
-
+const lullabyUI = `
 .flex-center {
     @apply flex justify-center items-center;
 }
@@ -749,7 +746,12 @@ document.head.innerHTML += `
     transform: rotate(135deg);
     translate: 4.5px -5px;
 }
+`
 
-}
+document.head.innerHTML += `
+<style type="text/tailwindcss">
+    @layer components {
+        ${lullabyUI}
+    }
 </style>
 `
