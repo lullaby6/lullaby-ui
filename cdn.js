@@ -1,4 +1,4 @@
-const lullabyUI = `
+const lullabyUIStyles = `
 .flex-center {
     @apply flex justify-center items-center;
 }
@@ -746,12 +746,20 @@ const lullabyUI = `
     transform: rotate(135deg);
     translate: 4.5px -5px;
 }
-`
+`;
 
 document.head.innerHTML += `
 <style type="text/tailwindcss">
     @layer components {
-        ${lullabyUI}
+        ${lullabyUIStyles}
     }
 </style>
-`
+`;
+
+const tailwindConfig = document.createElement('script');
+tailwindConfig.innerHTML = `
+tailwind.config = {
+    darkMode: 'class',
+}
+`;
+document.head.appendChild(tailwindConfig);
