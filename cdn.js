@@ -55,15 +55,15 @@ document.head.innerHTML += `
 }
 
 .bg-dark-hover {
-    @apply bg-[#17171C];
+    @apply bg-[#1B1B21];
 }
 
 .border-dark {
-    @apply border-[#202026];
+    @apply border-[#222228];
 }
 
 .ring-dark {
-    @apply ring-[#202026];
+    @apply ring-[#222228];
 }
 
 .dark-colors {
