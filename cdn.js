@@ -292,9 +292,12 @@ const lullabyUIPlugin = tailwind.plugin(function lullabyUI({ addComponents }) {
     addComponents(${JSON.stringify(lullabyUIComponents)});
 })
 
+if(!tailwind.config.plugins) tailwind.config.plugins = []
+
 tailwind.config = {
+    ...tailwind.config,
     darkMode: 'class',
-    plugins: [lullabyUIPlugin]
+    plugins: [...tailwind.config.plugins, lullabyUIPlugin],
 }
 `;
 
