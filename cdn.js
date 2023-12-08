@@ -236,6 +236,22 @@ let lullabyUIComponents = {
         "@apply text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
 
+    ".modal-container": {
+        "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-10": {},
+    },
+    ".modal-overlay": {
+        "@apply w-full h-full bg-black absolute left-0 top-0 opacity-25 z-10": {},
+    },
+    ".modal-blurred-overlay": {
+        "@apply w-full h-full bg-black absolute left-0 top-0 z-10 backdrop-blur-3xl": {},
+    },
+    ".modal-content": {
+        "@apply text-light bg-light rounded z-10 p-6 shadow border border-light": {},
+    },
+    ".dark-modal-content": {
+        "@apply text-dark bg-dark rounded z-10 p-6 shadow border border-dark": {},
+    },
+
     ...genNeonComponents()
 }
 

@@ -168,48 +168,6 @@
 
         </div>
 
-        <!-- Modal -->
-        <div class="flex flex-col gap-2">
-            <h1 class="title">Modal</h1>
-
-            <div class="flex gap-4">
-
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="button modal-open">Open Modal</button>
-
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
-                        <div class="modal-content">
-                            <h1>Modal</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="dark-button modal-open">Open Modal</button>
-
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
-                        <div class="dark-modal-content">
-                            <h1>Modal</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="button modal-open">Open Blurred Modal</button>
-
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-blurred-overlay modal-close opacity-50"></div>
-                        <div class="modal-content">
-                            <h1>Modal</h1>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
         <!-- Neon -->
         <div class="flex flex-col gap-2">
             <h1 class="title">Neon</h1>
@@ -256,6 +214,48 @@
 
             </div>
 
+        </div>
+
+        <!-- Modal -->
+        <div class="flex flex-col gap-2">
+            <h1 class="title">Modal</h1>
+
+            <div class="flex gap-4">
+
+                <div x-data="{ show_modal: false }" class="modal">
+                    <button x-on:click="show_modal = true" class="button modal-open">Open Modal</button>
+
+                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
+                        <div class="modal-content">
+                            <h1>Modal</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-data="{ show_modal: false }" class="modal">
+                    <button x-on:click="show_modal = true" class="dark-button modal-open">Open Modal</button>
+
+                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
+                        <div class="dark-modal-content">
+                            <h1>Modal</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-data="{ show_modal: false }" class="modal">
+                    <button x-on:click="show_modal = true" class="button modal-open">Open Blurred Modal</button>
+
+                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="modal-blurred-overlay modal-close opacity-50"></div>
+                        <div class="modal-content">
+                            <h1>Modal</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
