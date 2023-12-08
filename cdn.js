@@ -1,143 +1,156 @@
 let lullabyUIComponents = {
-    '.flex-center': {
+    '.lu-flex-center': {
         "@apply flex justify-center items-center": {},
     },
-    '.text-light': {
+    '.lu-text-light': {
         "@apply text-neutral-800": {},
     },
-    '.text-light-alt': {
+    '.lu-text-light-alt': {
         "@apply text-neutral-600": {},
     },
-    '.bg-light': {
+    '.lu-bg-light': {
         "@apply bg-white": {},
     },
-    '.bg-light-alt': {
+    '.lu-bg-light-alt': {
         "@apply bg-neutral-100": {},
     },
-    '.bg-light-hover': {
+    '.lu-bg-light-hover': {
         "@apply bg-neutral-200": {},
     },
-    '.border-light': {
+    '.lu-border-light': {
         "@apply border-neutral-300": {},
     },
-    '.ring-light': {
+    '.lu-ring-light': {
         "@apply ring-neutral-300": {},
     },
-    '.light-colors': {
-        "@apply text-light bg-light": {},
+    '.lu-light-colors': {
+        "@apply lu-text-light lu-bg-light": {},
     },
-    '.text-dark': {
+    '.lu-text-dark': {
         "@apply text-neutral-100": {},
     },
-    '.text-dark-alt': {
+    '.lu-text-dark-alt': {
         "@apply text-neutral-400": {},
     },
-    '.bg-dark': {
+    '.lu-bg-dark': {
         "@apply bg-[#111114]": {},
     },
-    '.bg-dark-alt': {
+    '.lu-bg-dark-alt': {
         "@apply bg-[#131316]": {},
     },
-    '.bg-dark-hover': {
+    '.lu-bg-dark-hover': {
         "@apply bg-[#1B1B21]": {},
     },
-    '.border-dark': {
+    '.lu-border-dark': {
         "@apply border-[#222228]": {},
     },
-    '.ring-dark': {
+    '.lu-ring-dark': {
         "@apply ring-[#222228]": {},
     },
-    '.dark-colors': {
-        "@apply text-dark bg-dark": {},
+    '.lu-dark-colors': {
+        "@apply lu-text-dark lu-bg-dark": {},
     },
 
-    '.scrollbar::-webkit-scrollbar': {
+    '.lu-scrollbar::-webkit-scrollbar': {
         "@apply w-4": {},
     },
-    '.scrollbar::-webkit-scrollbar-thumb': {
+    '.lu-scrollbar::-webkit-scrollbar-thumb': {
         "@apply bg-neutral-400": {},
         "border": "4px solid transparent",
         "border-radius": "9999px",
         "background-clip": "padding-box",
     },
-    '.scrollbar::-webkit-scrollbar-track': {
+    '.lu-scrollbar::-webkit-scrollbar-track': {
         "@apply bg-white": {},
     },
 
-    '.dark-scrollbar::-webkit-scrollbar': {
+    '.lu-dark-scrollbar::-webkit-scrollbar': {
         "@apply w-4": {},
     },
-    '.dark-scrollbar::-webkit-scrollbar-thumb': {
+    '.lu-dark-scrollbar::-webkit-scrollbar-thumb': {
         "@apply bg-neutral-600": {},
         "border": "4px solid transparent",
         "border-radius": "9999px",
         "background-clip": "padding-box",
     },
-    '.dark-scrollbar::-webkit-scrollbar-track': {
-        "@apply bg-dark": {},
+    '.lu-dark-scrollbar::-webkit-scrollbar-track': {
+        "@apply lu-bg-dark": {},
     },
 
-    '.theme-switcher': {
-        "@apply text-light bg-light-alt border border-light rounded-full p-1 cursor-pointer shadow hover:bg-light-hover hover:shadow-md dark:text-dark dark:bg-dark dark:border-dark dark:hover:bg-dark-hover select-none": {},
+    '.lu-theme-switcher': {
+        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded-full p-1 cursor-pointer shadow hover:lu-bg-light-hover hover:shadow-md dark:lu-text-dark dark:lu-bg-dark dark:lu-border-dark dark:hover:lu-bg-dark-hover select-none": {},
     },
-    '.theme-switcher .theme-switcher-icon': {
+    '.lu-theme-switcher .theme-switcher-icon': {
         "@apply w-5 h-5": {},
     },
 
-    '.button': {
-        "@apply text-light bg-light-alt border border-light rounded px-4 py-1 shadow hover:shadow-md hover:bg-light-hover h-fit w-fit": {},
+    '.lu-button': {
+        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded px-4 py-1 shadow hover:shadow-md hover:lu-bg-light-hover h-fit w-fit": {},
     },
-    '.dark-button': {
-        "@apply text-dark bg-dark-alt font-semibold border border-dark rounded px-4 py-1 shadow hover:shadow-md hover:bg-dark-hover h-fit w-fit": {},
-    },
-
-    '.link': {
-        "@apply text-light cursor-pointer relative h-fit w-fit before:content-[''] before:bg-dark-hover before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
-    },
-    '.dark-link': {
-        "@apply text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
+    '.lu-dark-button': {
+        "@apply lu-text-dark lu-bg-dark-alt font-semibold border lu-border-dark rounded px-4 py-1 shadow hover:shadow-md hover:lu-bg-dark-hover h-fit w-fit": {},
     },
 
-    '.badget': {
-        "@apply text-light bg-light-alt text-sm border border-light rounded-full px-3 py-[2.5px] shadow hover:bg-light-hover hover:shadow-md h-fit w-fit": {}
+    '.lu-link': {
+        "@apply lu-text-light cursor-pointer relative h-fit w-fit before:content-[''] before:lu-bg-dark-hover before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
     },
-    '.dark-badget': {
-        "@apply text-dark bg-dark-alt text-sm border border-dark rounded-full px-3 py-[2.5px] shadow hover:bg-dark-hover hover:shadow-md h-fit w-fit": {}
-    },
-
-    '.title': {
-        "@apply text-light text-3xl font-semibold": {}
-    },
-    '.dark-title': {
-        "@apply text-dark text-3xl font-semibold": {}
+    '.lu-dark-link': {
+        "@apply lu-text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:lu-bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
     },
 
-    '.input': {
-        "@apply text-light bg-light-alt border border-light rounded focus:outline-none focus:ring-1 focus:ring-light px-2 py-1 shadow h-fit": {}
+    '.lu-badget': {
+        "@apply lu-text-light lu-bg-light-alt text-sm border lu-border-light rounded-full px-3 py-[2.5px] shadow hover:lu-bg-light-hover hover:shadow-md h-fit w-fit": {}
     },
-    '.dark-input': {
-        "@apply text-dark bg-dark-alt border border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow h-fit": {}
-    },
-
-    '.input-file': {
-        "@apply text-light-alt bg-light-alt file:px-3 file:py-1 file:border-none file:bg-light-hover file:h-full file:text-light-alt file:cursor-pointer rounded border border-light p-0 m-0 cursor-pointer hover:ring-1 hover:ring-light shadow pr-2 h-fit": {}
-    },
-    '.dark-input-file': {
-        "@apply text-dark-alt bg-dark-hover file:px-3 file:py-1 file:border-none file:bg-dark file:h-full file:text-dark file:cursor-pointer rounded border border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:ring-dark shadow pr-2 h-fit": {}
+    '.lu-dark-badget': {
+        "@apply lu-text-dark lu-bg-dark-alt text-sm border lu-border-dark rounded-full px-3 py-[2.5px] shadow hover:lu-bg-dark-hover hover:shadow-md h-fit w-fit": {}
     },
 
-    '.input-auto-width': {
+    '.lu-title': {
+        "@apply lu-text-light text-3xl font-semibold": {},
+        "text-wrap": "balance",
+
+    },
+    '.lu-dark-title': {
+        "@apply lu-text-dark text-3xl font-semibold": {},
+        "text-wrap": "balance",
+    },
+
+    '.lu-text': {
+        "@apply lu-text-light text-base": {},
+        "text-wrap": "pretty",
+
+    },
+    '.lu-dark-text': {
+        "@apply lu-text-dark text-base": {},
+        "text-wrap": "pretty",
+    },
+
+    '.lu-input': {
+        "@apply lu-text-light lu-bg-light-alt border lu-border-light rounded focus:outline-none focus:ring-1 focus:lu-ring-light px-2 py-1 shadow h-fit": {}
+    },
+    '.lu-dark-input': {
+        "@apply lu-text-dark lu-bg-dark-alt border lu-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:lu-ring-dark px-2 py-1 shadow h-fit": {}
+    },
+
+    '.lu-input-file': {
+        "@apply lu-text-light-alt lu-bg-light-alt file:px-3 file:py-1 file:border-none file:lu-bg-light-hover file:h-full file:lu-text-light-alt file:cursor-pointer rounded border lu-border-light p-0 m-0 cursor-pointer hover:ring-1 hover:lu-ring-light shadow pr-2 h-fit": {}
+    },
+    '.lu-dark-input-file': {
+        "@apply lu-text-dark-alt lu-bg-dark-hover file:px-3 file:py-1 file:border-none file:lu-bg-dark file:h-full file:lu-text-dark file:cursor-pointer rounded border lu-border-dark p-0 m-0 cursor-pointer hover:ring-1 hover:lu-ring-dark shadow pr-2 h-fit": {}
+    },
+
+    '.lu-input-auto-width': {
         "@apply min-w-[15ch] w-[15ch]": {}
     },
 
-    ".textarea": {
-        "@apply text-light bg-light-alt border border-light relative rounded focus:outline-none focus:ring-1 focus:ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+    ".lu-textarea": {
+        "@apply lu-text-light lu-bg-light-alt border lu-border-light relative rounded focus:outline-none focus:ring-1 focus:lu-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
     },
-    ".textarea-resize": {
+    ".lu-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {}
     },
-    ".textarea-resize .textarea::-webkit-resizer": {},
-    ".textarea-resize::before": {
+    ".lu-textarea-resize .lu-textarea::-webkit-resizer": {},
+    ".lu-textarea-resize::before": {
         "content": "",
         "position": "absolute",
         "z-index": 10,
@@ -151,15 +164,15 @@ let lullabyUIComponents = {
         "transform": "rotate(135deg)",
         "translate": "4.5px -5px",
     },
-    ".dark-textarea": {
-        "@apply text-dark bg-dark-alt border border-dark placeholder:text-dark-alt rounded focus:outline-none focus:ring-1 focus:ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+    ".lu-dark-textarea": {
+        "@apply lu-text-dark lu-bg-dark-alt border lu-border-dark placeholder:lu-text-dark-alt rounded focus:outline-none focus:ring-1 focus:lu-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
     },
-    ".dark-textarea-resize": {
+    ".lu-dark-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {},
     },
-    ".dark-textarea-resize .dark-textarea::-webkit-resizer": {
+    ".lu-dark-textarea-resize .lu-dark-textarea::-webkit-resizer": {
     },
-    ".dark-textarea-resize::before": {
+    ".lu-dark-textarea-resize::before": {
         "content": "",
         "position": "absolute",
         "z-index": 10,
@@ -174,82 +187,82 @@ let lullabyUIComponents = {
         "translate": "4.5px -5px",
     },
 
-    ".card": {
-        "@apply text-light bg-light flex flex-col gap-4 p-6 shadow border border-light rounded shadow w-fit h-fit": {},
+    ".lu-card": {
+        "@apply lu-text-light lu-bg-light flex flex-col gap-4 p-6 shadow border lu-border-light rounded shadow w-fit h-fit": {},
     },
-    ".card-header": {
+    ".lu-card-header": {
         "@apply flex flex-col w-full": {},
     },
-    ".card-title": {
-        "@apply text-light text-2xl font-semibold": {},
+    ".lu-card-title": {
+        "@apply lu-text-light text-2xl font-semibold": {},
     },
-    ".card-desc": {
+    ".lu-card-desc": {
         " @apply text-light-alt": {},
     },
-    ".card-content": {
+    ".lu-card-content": {
         "@apply w-full": {},
     },
-    ".card-footer": {
+    ".lu-card-footer": {
         "@apply flex w-full": {},
     },
-    ".dark-card": {
-        "@apply text-dark bg-dark flex flex-col gap-4 p-6 shadow border border-dark rounded shadow w-fit h-fit": {},
+    ".lu-dark-card": {
+        "@apply lu-text-dark lu-bg-dark flex flex-col gap-4 p-6 shadow border lu-border-dark rounded shadow w-fit h-fit": {},
     },
-    ".dark-card-title": {
-        "@apply text-dark text-2xl font-semibold": {},
+    ".lu-dark-card-title": {
+        "@apply lu-text-dark text-2xl font-semibold": {},
     },
-    ".dark-card-desc": {
-        "@apply text-dark-alt": {},
+    ".lu-dark-card-desc": {
+        "@apply lu-text-dark-alt": {},
     },
 
-    ".dropzone": {
-        "@apply text-light bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-light-hover": {},
+    ".lu-dropzone": {
+        "@apply lu-text-light lu-bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 lu-border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:lu-bg-light-hover": {},
     },
-    ".dropzone-content": {
+    ".lu-dropzone-content": {
         "@apply flex flex-col items-center justify-center py-6 gap-3": {},
     },
-    ".dropzone-icon": {
-        "@apply text-light-alt w-10 h-10": {},
+    ".lu-dropzone-icon": {
+        "@apply lu-text-light-alt w-10 h-10": {},
     },
-    ".dropzone-title": {
-        "@apply text-light text-sm": {},
+    ".lu-dropzone-title": {
+        "@apply lu-text-light text-sm": {},
     },
-    ".dropzone-desc": {
-        "@apply text-light-alt text-xs": {},
+    ".lu-dropzone-desc": {
+        "@apply lu-text-light-alt text-xs": {},
     },
-    ".dropzone-input": {
-        "@apply text-light-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
+    ".lu-dropzone-input": {
+        "@apply lu-text-light-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
-    ".dark-dropzone": {
-        "@apply text-dark bg-dark-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:bg-dark-hover": {},
+    ".lu-dark-dropzone": {
+        "@apply lu-text-dark lu-bg-dark-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 lu-border-dark border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:lu-bg-dark-hover": {},
     },
-    ".dark-dropzone-icon": {
-        "@apply text-dark-alt w-10 h-10": {},
+    ".lu-dark-dropzone-icon": {
+        "@apply lu-text-dark-alt w-10 h-10": {},
     },
-    ".dark-dropzone-title": {
-        "@apply text-dark text-sm": {},
+    ".lu-dark-dropzone-title": {
+        "@apply lu-text-dark text-sm": {},
     },
-    ".dark-dropzone-desc": {
-        "@apply text-dark-alt text-xs": {},
+    ".lu-dark-dropzone-desc": {
+        "@apply lu-text-dark-alt text-xs": {},
     },
-    ".dark-dropzone-input": {
-        "@apply text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
+    ".lu-dark-dropzone-input": {
+        "@apply lu-text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
 
-    ".modal-container": {
+    ".lu-modal-container": {
         "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-10": {},
     },
-    ".modal-overlay": {
-        "@apply w-full h-full bg-black absolute left-0 top-0 opacity-25 z-10": {},
+    ".lu-modal-overlay": {
+        "@apply w-full h-full lu-bg-dark absolute left-0 top-0 opacity-25 z-10": {},
     },
-    ".modal-blurred-overlay": {
-        "@apply w-full h-full bg-black absolute left-0 top-0 z-10 backdrop-blur-3xl": {},
+    ".lu-modal-blurred-overlay": {
+        "@apply w-full h-full lu-bg-dark absolute left-0 top-0 z-10 backdrop-blur-3xl": {},
     },
-    ".modal-content": {
-        "@apply text-light bg-light rounded z-10 p-6 shadow border border-light": {},
+    ".lu-modal-content": {
+        "@apply lu-text-light lu-bg-light rounded z-10 p-6 shadow border lu-border-light": {},
     },
-    ".dark-modal-content": {
-        "@apply text-dark bg-dark rounded z-10 p-6 shadow border border-dark": {},
+    ".lu-dark-modal-content": {
+        "@apply lu-text-dark lu-bg-dark rounded z-10 p-6 shadow border lu-border-dark": {},
     },
 
     ...genNeonComponents()
@@ -274,7 +287,7 @@ function genNeonComponents() {
     Object.entries(sizes).forEach(([size, sizeValue]) => {
         colors.forEach(color => {
             colorValues.forEach(colorValue => {
-                const neonComponentName = `.neon-${size}-${color}-${colorValue}`
+                const neonComponentName = `.lu-neon-${size}-${color}-${colorValue}`
                 const neonComponentValue = {
                     "box-shadow": `0 0 ${sizeValue}px 2.5px theme('colors.${color}.${colorValue}')`,
                 }

@@ -15,19 +15,18 @@
 
     <script src="./cdn.js"></script>
 </head>
-<body class="scrollbar dark:dark-colors dark:dark-scrollbar transition-colors">
+<body class="scrollbar light-colors dark:dark-colors dark:dark-scrollbar transition-colors">
     <div class="p-10 flex flex-col gap-10">
-
-        <h1 class="text-clifford font-bold text-4xl red">Lullaby UI</h1>
+        <h1 class="font-bold text-4xl">Lullaby UI</h1>
 
         <!-- Theme Switcher -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Theme Switcher</h1>
+            <h1 class="lu-title">Theme Switcher</h1>
 
             <div class="flex gap-4">
-                <div class="theme-switcher" x-on:click="darkMode = !darkMode">
-                    <svg class="theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
-                    <svg class="theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
+                <div class="lu-theme-switcher" x-on:click="darkMode = !darkMode">
+                    <svg class="lu-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
+                    <svg class="lu-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
                 </div>
             </div>
 
@@ -35,35 +34,35 @@
 
         <!-- Button -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Button</h1>
+            <h1 class="lu-title">Button</h1>
 
             <div class="flex gap-4">
-                <button class="button">Button</button>
-                <button class="dark-button">Button</button>
+                <button class="lu-button">Button</button>
+                <button class="lu-dark-button">Button</button>
             </div>
 
         </div>
 
         <!-- Link -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Link</h1>
+            <h1 class="lu-title">Link</h1>
 
             <div class="flex flex-col gap-4">
-                <div class="flex gap-4 card flex-row">
-                    <a href="#hola" class="link">Link</a>
-                    <a href="#hola" class="link px-1">Link</a>
-                    <a href="#hola" class="link px-2">Link</a>
-                    <a href="#hola" class="link text-lg">Link</a>
-                    <a href="#hola" class="link text-xl">Link</a>
-                    <a href="#hola" class="link text-2xl">Link</a>
+                <div class="flex gap-4 lu-card flex-row">
+                    <a href="#hola" class="lu-link">Link</a>
+                    <a href="#hola" class="lu-link px-1">Link</a>
+                    <a href="#hola" class="lu-link px-2">Link</a>
+                    <a href="#hola" class="lu-link text-lg">Link</a>
+                    <a href="#hola" class="lu-link text-xl">Link</a>
+                    <a href="#hola" class="lu-link text-2xl">Link</a>
                 </div>
-                <div class="flex gap-4 dark-card flex-row">
-                    <a href="#hola" class="dark-link">Link</a>
-                    <a href="#hola" class="dark-link px-1">Link</a>
-                    <a href="#hola" class="dark-link px-2">Link</a>
-                    <a href="#hola" class="dark-link text-lg">Link</a>
-                    <a href="#hola" class="dark-link text-xl">Link</a>
-                    <a href="#hola" class="dark-link text-2xl">Link</a>
+                <div class="flex gap-4 lu-dark-card flex-row">
+                    <a href="#hola" class="lu-dark-link">Link</a>
+                    <a href="#hola" class="lu-dark-link px-1">Link</a>
+                    <a href="#hola" class="lu-dark-link px-2">Link</a>
+                    <a href="#hola" class="lu-dark-link text-lg">Link</a>
+                    <a href="#hola" class="lu-dark-link text-xl">Link</a>
+                    <a href="#hola" class="lu-dark-link text-2xl">Link</a>
                 </div>
             </div>
 
@@ -71,60 +70,60 @@
 
         <!-- Badget -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Badget</h1>
+            <h1 class="lu-title">Badget</h1>
 
             <div class="flex gap-4">
-                <p class="badget">Badget</p>
-                <p class="dark-badget">Badget</p>
+                <p class="lu-badget">Badget</p>
+                <p class="lu-dark-badget">Badget</p>
             </div>
 
         </div>
 
         <!-- Input -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Input</h1>
+            <h1 class="lu-title">Input</h1>
 
             <div class="flex gap-4">
-                <input type="text" class="input" placeholder="Input">
-                <input type="text" class="dark-input" placeholder="Input">
+                <input type="text" class="lu-input" placeholder="Input">
+                <input type="text" class="lu-dark-input" placeholder="Input">
             </div>
 
         </div>
 
         <!-- Input file -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Input file</h1>
+            <h1 class="lu-title">Input file</h1>
 
             <div class="flex gap-4">
-                <input type="file" class="input-file" placeholder="Input">
-                <input type="file" class="dark-input-file" placeholder="Input">
+                <input type="file" class="lu-input-file" placeholder="Input">
+                <input type="file" class="lu-dark-input-file" placeholder="Input">
             </div>
 
         </div>
 
         <!-- Input auto width -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Input auto width</h1>
+            <h1 class="lu-title">Input auto width</h1>
 
             <div class="flex gap-4">
-                <input type="text" class="input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-                <input type="text" class="dark-input input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                <input type="text" class="lu-input lu-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                <input type="text" class="lu-dark-input lu-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
             </div>
 
         </div>
 
         <!-- Textarea -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Textarea</h1>
+            <h1 class="lu-title">Textarea</h1>
 
             <div class="flex gap-4">
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
-                <div class="textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="textarea scrollbar text-xl"></textarea>
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="lu-textarea lu-scrollbar text-xl"></textarea>
+                <div class="lu-textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="lu-textarea lu-scrollbar text-xl"></textarea>
                 </div>
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
-                <div class="dark-textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="dark-textarea dark-scrollbar text-xl"></textarea>
+                <textarea name="" id="" cols="30" placeholder="Textarea" class="lu-dark-textarea lu-dark-scrollbar text-xl"></textarea>
+                <div class="lu-dark-textarea-resize">
+                    <textarea name="" id="" cols="30" placeholder="Textarea" class="lu-dark-textarea lu-dark-scrollbar text-xl"></textarea>
                 </div>
             </div>
 
@@ -132,35 +131,35 @@
 
         <!-- Card -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Card</h1>
+            <h1 class="lu-title">Card</h1>
 
             <div class="flex gap-4">
 
-                <div class="card">
-                    <div class="card-header">
-                        <h1 class="card-title">Card</h1>
-                        <h1 class="card-desc">Card description</h1>
+                <div class="lu-card">
+                    <div class="lu-card-header">
+                        <h1 class="lu-card-title">Card</h1>
+                        <h1 class="lu-card-desc">Card description</h1>
                     </div>
-                    <div class="card-content">
+                    <div class="lu-card-content">
                         <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
                     </div>
-                    <div class="card-footer justify-between">
-                        <button class="button">Cancel</button>
-                        <button class="dark-button">Button</button>
+                    <div class="lu-card-footer justify-between">
+                        <button class="lu-button">Cancel</button>
+                        <button class="lu-dark-button">Button</button>
                     </div>
                 </div>
 
-                <div class="dark-card">
-                    <div class="card-header">
-                        <h1 class="dark-card-title">Card</h1>
-                        <h1 class="dark-card-desc">Card description</h1>
+                <div class="lu-dark-card">
+                    <div class="lu-card-header">
+                        <h1 class="lu-dark-card-title">Card</h1>
+                        <h1 class="lu-dark-card-desc">Card description</h1>
                     </div>
-                    <div class="card-content">
+                    <div class="lu-card-content">
                         <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
                     </div>
-                    <div class="card-footer justify-between">
-                        <button class="dark-button">Cancel</button>
-                        <button class="button">Button</button>
+                    <div class="lu-card-footer justify-between">
+                        <button class="lu-dark-button">Cancel</button>
+                        <button class="lu-button">Button</button>
                     </div>
                 </div>
 
@@ -170,18 +169,18 @@
 
         <!-- Neon -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Neon</h1>
+            <h1 class="lu-title">Neon</h1>
 
             <div class="flex gap-4">
-                <div class="dark-card flex-row gap-10">
-                    <button class="dark-button neon-xs-red-400 hover:neon-xs-red-400">Button</button>
-                    <button class="dark-button neon-xs-red-600 hover:neon-xs-red-600">Button</button>
-                    <button class="dark-button neon-xs-red-900 hover:neon-xs-red-900">Button</button>
-                    <button class="dark-button neon-sm-blue-600 hover:neon-sm-blue-600">Button</button>
-                    <button class="dark-button neon-md-green-600 hover:neon-md-green-600">Button</button>
-                    <button class="dark-button neon-lg-yellow-600 hover:neon-lg-yellow-600">Button</button>
-                    <button class="dark-button neon-xl-cyan-600 hover:neon-xl-cyan-600">Button</button>
-                    <button class="dark-button neon-2xl-emerald-600 hover:neon-2xl-emerald-600">Button</button>
+                <div class="lu-dark-card flex-row gap-10">
+                    <button class="lu-dark-button lu-neon-xs-red-400 hover:lu-neon-xs-red-400">Button</button>
+                    <button class="lu-dark-button lu-neon-xs-red-600 hover:lu-neon-xs-red-600">Button</button>
+                    <button class="lu-dark-button lu-neon-xs-red-900 hover:lu-neon-xs-red-900">Button</button>
+                    <button class="lu-dark-button lu-neon-sm-blue-600 hover:lu-neon-sm-blue-600">Button</button>
+                    <button class="lu-dark-button lu-neon-md-green-600 hover:lu-neon-md-green-600">Button</button>
+                    <button class="lu-dark-button lu-neon-lg-yellow-600 hover:lu-neon-lg-yellow-600">Button</button>
+                    <button class="lu-dark-button lu-neon-xl-cyan-600 hover:lu-neon-xl-cyan-600">Button</button>
+                    <button class="lu-dark-button lu-neon-2xl-emerald-600 hover:lu-neon-2xl-emerald-600">Button</button>
                 </div>
 
             </div>
@@ -190,25 +189,25 @@
 
         <!-- Dropzone -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Dropzone</h1>
+            <h1 class="lu-title">Dropzone</h1>
 
             <div class="flex gap-4">
 
-                <label for="dropzone" class="dropzone">
-                    <div class="dropzone-content">
-                        <svg class="dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                        <p class="dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                        <p class="dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                        <input id="dropzone" type="file" class="dropzone-input" />
+                <label for="dropzone" class="lu-dropzone">
+                    <div class="lu-dropzone-content">
+                        <svg class="lu-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        <p class="lu-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                        <p class="lu-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                        <input id="dropzone" type="file" class="lu-dropzone-input" />
                     </div>
                 </label>
 
-                <label for="dropzone-2" class="dark-dropzone">
-                    <div class="dropzone-content">
-                        <svg class="dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                        <p class="dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                        <p class="dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                        <input id="dropzone-2" type="file" class="dark-dropzone-input" />
+                <label for="dropzone-2" class="lu-dark-dropzone">
+                    <div class="lu-dropzone-content">
+                        <svg class="lu-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        <p class="lu-dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                        <p class="lu-dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                        <input id="dropzone-2" type="file" class="lu-dark-dropzone-input" />
                     </div>
                 </label>
 
@@ -218,38 +217,38 @@
 
         <!-- Modal -->
         <div class="flex flex-col gap-2">
-            <h1 class="title">Modal</h1>
+            <h1 class="lu-title">Modal</h1>
 
             <div class="flex gap-4">
 
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="button modal-open">Open Modal</button>
+                <div x-data="{ show_modal: false }">
+                    <button x-on:click="show_modal = true" class="lu-button modal-open">Open Modal</button>
 
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
-                        <div class="modal-content">
+                    <div class="lu-modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="lu-modal-overlay modal-close opacity-50"></div>
+                        <div class="lu-modal-content">
                             <h1>Modal</h1>
                         </div>
                     </div>
                 </div>
 
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="dark-button modal-open">Open Modal</button>
+                <div x-data="{ show_modal: false }">
+                    <button x-on:click="show_modal = true" class="lu-dark-button modal-open">Open Modal</button>
 
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-overlay modal-close opacity-50"></div>
-                        <div class="dark-modal-content">
+                    <div class="lu-modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="lu-modal-overlay modal-close opacity-50"></div>
+                        <div class="lu-dark-modal-content">
                             <h1>Modal</h1>
                         </div>
                     </div>
                 </div>
 
-                <div x-data="{ show_modal: false }" class="modal">
-                    <button x-on:click="show_modal = true" class="button modal-open">Open Blurred Modal</button>
+                <div x-data="{ show_modal: false }">
+                    <button x-on:click="show_modal = true" class="lu-button modal-open">Open Blurred Modal</button>
 
-                    <div class="modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="modal-blurred-overlay modal-close opacity-50"></div>
-                        <div class="modal-content">
+                    <div class="lu-modal-container" x-show="show_modal" x-transition.opacity>
+                        <div x-on:click="show_modal = false" class="lu-modal-blurred-overlay modal-close opacity-50"></div>
+                        <div class="lu-modal-content">
                             <h1>Modal</h1>
                         </div>
                     </div>
