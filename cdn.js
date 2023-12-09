@@ -181,7 +181,9 @@ let lullabyUIComponents = {
     },
 
     ".ly-textarea": {
-        "@apply ly-text-light ly-bg-light-alt border ly-border-light relative rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light relative rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {},
+        "reisze": "horizontal",
+        "overflow": "hidden",
     },
     ".ly-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {}
@@ -202,12 +204,15 @@ let lullabyUIComponents = {
         "translate": "4.5px -5px",
     },
     ".ly-dark-textarea": {
-        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder:ly-text-dark-alt rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
+        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder:ly-text-dark-alt rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {},
+        "reisze": "horizontal",
+        "overflow": "hidden",
     },
     ".ly-dark-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {},
     },
     ".ly-dark-textarea-resize .ly-dark-textarea::-webkit-resizer": {
+        "@apply ly-bg-dark-alt": {}
     },
     ".ly-dark-textarea-resize::before": {
         "content": "",
