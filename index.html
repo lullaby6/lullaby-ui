@@ -39,6 +39,7 @@
             <div class="flex gap-4">
                 <button class="ly-button">Button</button>
                 <button class="ly-dark-button">Button</button>
+                <button class="ly-button dark:ly-dark-button">Button</button>
             </div>
 
         </div>
@@ -108,6 +109,58 @@
             <div class="flex gap-4">
                 <input type="text" class="ly-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
                 <input type="text" class="ly-dark-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+            </div>
+
+        </div>
+
+        <!-- Select -->
+        <div class="flex flex-col gap-2">
+            <h1 class="ly-title">Select</h1>
+
+            <div class="flex gap-4">
+
+                <div class="ly-select">
+                    <select name="" id="" class="ly-select-input">
+                        <option selected disabled>Select a option</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                    <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                </div>
+
+                <div class="ly-select">
+                    <select name="" id="" class="ly-dark-select-input">
+                        <option selected disabled>Select a option</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                    </select>
+                    <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                </div>
+
+                <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                    <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                    <button x-on:click="open = !open" x-text="text" type="text" class="ly-select-input"></button>
+                    <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    <div x-show="open" class="ly-custom-select-options">
+                        <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-custom-select-option">Option 1</button>
+                        <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-custom-select-option">Option 2</button>
+                        <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-custom-select-option">Option 3</button>
+                    </div>
+                </div>
+
+                <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                    <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                    <button x-on:click="open = !open" x-text="text" type="text" class="ly-dark-select-input"></button>
+                    <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    <div x-show="open" class="ly-dark-custom-select-options">
+                        <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-dark-custom-select-option">Option 1</button>
+                        <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-dark-custom-select-option">Option 2</button>
+                        <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-dark-custom-select-option">Option 3</button>
+                    </div>
+                </div>
+
             </div>
 
         </div>

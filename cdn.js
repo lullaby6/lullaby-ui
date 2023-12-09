@@ -143,6 +143,43 @@ let lullabyUIComponents = {
         "@apply min-w-[15ch] w-[15ch]": {}
     },
 
+    '.ly-select': {
+        "@apply flex items-center relative w-fit h-fit": {}
+    },
+
+    '.ly-select-input': {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-light focus:ly-bg-light cursor-pointer w-fit h-fit appearance-none": {}
+    },
+
+    '.ly-select-icon': {
+        "@apply ly-text-light w-3 h-3 absolute right-2 opacity-75 pointer-events-none": {}
+    },
+
+    '.ly-dark-select-input': {
+        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-dark focus:ly-bg-dark cursor-pointer w-fit h-fit appearance-none": {}
+    },
+
+    '.ly-dark-select-icon': {
+        "@apply ly-text-dark w-3 h-3 absolute right-2 opacity-75 pointer-events-none": {}
+    },
+
+    '.ly-custom-select-input': {
+        "@apply hidden": {}
+    },
+    '.ly-custom-select-options': {
+        "@apply ly-text-light ly-bg-light border ly-border-light rounded shadow absolute left-0 -bottom-1 flex flex-col gap-2 w-full h-fit translate-y-[100%] z-10 p-2 hover:ring-1 hover:ly-ring-light": {}
+    },
+    '.ly-custom-select-option': {
+        "@apply ly-text-light-alt text-left px-2 py-1 hover:ly-bg-light-hover hover:ly-text-light rounded": {}
+    },
+
+    '.ly-dark-custom-select-options': {
+        "@apply ly-text-dark ly-bg-dark border ly-border-dark rounded shadow absolute left-0 -bottom-1 flex flex-col gap-2 w-full h-fit translate-y-[100%] z-10 p-2 hover:ring-1 hover:ly-ring-dark": {}
+    },
+    '.ly-dark-custom-select-option': {
+        "@apply ly-text-dark-alt text-left px-2 py-1 hover:ly-bg-dark-hover hover:ly-text-dark rounded": {}
+    },
+
     ".ly-textarea": {
         "@apply ly-text-light ly-bg-light-alt border ly-border-light relative rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {}
     },
