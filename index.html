@@ -15,312 +15,409 @@
 
     <script src="./cdn.js"></script>
 </head>
-<body class="ly-scrollbar ly-light-colors dark:ly-dark-colors dark:ly-dark-scrollbar transition-colors">
-    <div class="p-10 flex flex-col gap-10">
-        <h1 class="font-bold text-4xl">Lullaby UI</h1>
-
-        <!-- Theme Switcher -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Theme Switcher</h1>
-
-            <div class="flex gap-4">
-                <div class="ly-theme-switcher" x-on:click="darkMode = !darkMode">
-                    <svg class="ly-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
-                    <svg class="ly-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
-                </div>
-            </div>
-
+<body class="ly-light-colors dark:ly-dark-colors transition-colors flex flex-col">
+    <header class="ly-text-light ly-bg-light sticky top-0 left-0 px-16 flex justify-between items-center border-b ly-border-light w-full h-14 shadow z-100">
+        <h1 class="ly-title font-bold text-lg">Lullaby UI</h1>
+    </header>
+    <div class="flex h-full">
+        <div class="ly-sidebar ly-text-light ly-bg-light px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit">
+            <h1 class="ly-title text-base">Components</h1>
         </div>
 
-        <!-- Button -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Button</h1>
+        <main class="pl-10 py-10 flex flex-col gap-16 w-full ly-scrollbar dark:ly-dark-scrollbar border-l ly-border-light">
+            <!-- Theme Switcher -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Theme Switcher</h1>
 
-            <div class="flex gap-4">
-                <button class="ly-button">Button</button>
-                <button class="ly-dark-button">Button</button>
-                <button class="ly-button dark:ly-dark-button">Button</button>
-            </div>
-
-        </div>
-
-        <!-- Link -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Link</h1>
-
-            <div class="flex flex-col gap-4">
-                <div class="flex gap-4 ly-card flex-row">
-                    <a href="#hola" class="ly-link">Link</a>
-                    <a href="#hola" class="ly-link px-1">Link</a>
-                    <a href="#hola" class="ly-link px-2">Link</a>
-                    <a href="#hola" class="ly-link text-lg">Link</a>
-                    <a href="#hola" class="ly-link text-xl">Link</a>
-                    <a href="#hola" class="ly-link text-2xl">Link</a>
-                </div>
-                <div class="flex gap-4 ly-dark-card flex-row">
-                    <a href="#hola" class="ly-dark-link">Link</a>
-                    <a href="#hola" class="ly-dark-link px-1">Link</a>
-                    <a href="#hola" class="ly-dark-link px-2">Link</a>
-                    <a href="#hola" class="ly-dark-link text-lg">Link</a>
-                    <a href="#hola" class="ly-dark-link text-xl">Link</a>
-                    <a href="#hola" class="ly-dark-link text-2xl">Link</a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Badget -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Badget</h1>
-
-            <div class="flex gap-4">
-                <p class="ly-badget">Badget</p>
-                <p class="ly-dark-badget">Badget</p>
-            </div>
-
-        </div>
-
-        <!-- Input -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Input</h1>
-
-            <div class="flex gap-4">
-                <input type="text" class="ly-input" placeholder="Input">
-                <input type="text" class="ly-dark-input" placeholder="Input">
-            </div>
-
-        </div>
-
-        <!-- Input file -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Input file</h1>
-
-            <div class="flex gap-4">
-                <input type="file" class="ly-input-file" placeholder="Input">
-                <input type="file" class="ly-dark-input-file" placeholder="Input">
-            </div>
-
-        </div>
-
-        <!-- Input auto width -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Input auto width</h1>
-
-            <div class="flex gap-4">
-                <input type="text" class="ly-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-                <input type="text" class="ly-dark-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-            </div>
-
-        </div>
-
-        <!-- Select -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Select</h1>
-
-            <div class="flex gap-4">
-
-                <div class="ly-select">
-                    <select name="" id="" class="ly-select-input">
-                        <option selected disabled>Select a option</option>
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
-                        <option value="">Option 3</option>
-                    </select>
-                    <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                </div>
-
-                <div class="ly-select">
-                    <select name="" id="" class="ly-dark-select-input">
-                        <option selected disabled>Select a option</option>
-                        <option value="option-1">Option 1</option>
-                        <option value="option-2">Option 2</option>
-                        <option value="option-3">Option 3</option>
-                    </select>
-                    <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                </div>
-
-                <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
-                    <input type="text" x-bind:value="value" class="ly-custom-select-input">
-                    <button x-on:click="open = !open" x-text="text" type="text" class="ly-select-input"></button>
-                    <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                    <div x-show="open" class="ly-custom-select-options">
-                        <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-custom-select-option">Option 1</button>
-                        <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-custom-select-option">Option 2</button>
-                        <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-custom-select-option">Option 3</button>
-                    </div>
-                </div>
-
-                <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
-                    <input type="text" x-bind:value="value" class="ly-custom-select-input">
-                    <button x-on:click="open = !open" x-text="text" type="text" class="ly-dark-select-input"></button>
-                    <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                    <div x-show="open" class="ly-dark-custom-select-options">
-                        <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-dark-custom-select-option">Option 1</button>
-                        <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-dark-custom-select-option">Option 2</button>
-                        <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-dark-custom-select-option">Option 3</button>
+                <div class="flex gap-4">
+                    <div class="ly-theme-switcher" x-on:click="darkMode = !darkMode">
+                        <svg class="ly-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
+                        <svg class="ly-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
                     </div>
                 </div>
 
             </div>
 
-        </div>
+            <!-- Button -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Button</h1>
 
-        <!-- Textarea -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Textarea</h1>
+                <div class="flex gap-4">
+                    <button class="ly-button">Button</button>
+                    <button class="ly-dark-button">Button</button>
+                    <button class="ly-button dark:ly-dark-button">Button</button>
+                </div>
 
-            <div class="flex gap-4">
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
-                <div class="ly-textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
-                </div>
-                <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
-                <div class="ly-dark-textarea-resize">
-                    <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
-                </div>
             </div>
 
-        </div>
+            <!-- Link -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Link</h1>
 
-        <!-- Card -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Card</h1>
-
-            <div class="flex gap-4">
-
-                <div class="ly-card">
-                    <div class="ly-card-header">
-                        <h1 class="ly-card-title">Card</h1>
-                        <h1 class="ly-card-desc">Card description</h1>
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-4 ly-card flex-row">
+                        <a href="#hola" class="ly-link">Link</a>
+                        <a href="#hola" class="ly-link px-1">Link</a>
+                        <a href="#hola" class="ly-link px-2">Link</a>
+                        <a href="#hola" class="ly-link text-lg">Link</a>
+                        <a href="#hola" class="ly-link text-xl">Link</a>
+                        <a href="#hola" class="ly-link text-2xl">Link</a>
                     </div>
-                    <div class="ly-card-content">
-                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                    </div>
-                    <div class="ly-card-footer justify-between">
-                        <button class="ly-button">Cancel</button>
-                        <button class="ly-dark-button">Button</button>
-                    </div>
-                </div>
-
-                <div class="ly-dark-card">
-                    <div class="ly-card-header">
-                        <h1 class="ly-dark-card-title">Card</h1>
-                        <h1 class="ly-dark-card-desc">Card description</h1>
-                    </div>
-                    <div class="ly-card-content">
-                        <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                    </div>
-                    <div class="ly-card-footer justify-between">
-                        <button class="ly-dark-button">Cancel</button>
-                        <button class="ly-button">Button</button>
+                    <div class="flex gap-4 ly-dark-card flex-row">
+                        <a href="#hola" class="ly-dark-link">Link</a>
+                        <a href="#hola" class="ly-dark-link px-1">Link</a>
+                        <a href="#hola" class="ly-dark-link px-2">Link</a>
+                        <a href="#hola" class="ly-dark-link text-lg">Link</a>
+                        <a href="#hola" class="ly-dark-link text-xl">Link</a>
+                        <a href="#hola" class="ly-dark-link text-2xl">Link</a>
                     </div>
                 </div>
 
             </div>
 
-        </div>
+            <!-- Badget -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Badget</h1>
 
-        <!-- Neon -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Neon</h1>
-
-            <div class="flex gap-4">
-                <div class="ly-dark-card flex-row gap-10">
-                    <button class="ly-dark-button ly-neon-xs-red-400 hover:ly-neon-xs-red-400">Button</button>
-                    <button class="ly-dark-button ly-neon-xs-red-600 hover:ly-neon-xs-red-600">Button</button>
-                    <button class="ly-dark-button ly-neon-xs-red-900 hover:ly-neon-xs-red-900">Button</button>
-                    <button class="ly-dark-button ly-neon-sm-blue-600 hover:ly-neon-sm-blue-600">Button</button>
-                    <button class="ly-dark-button ly-neon-md-green-600 hover:ly-neon-md-green-600">Button</button>
-                    <button class="ly-dark-button ly-neon-lg-yellow-600 hover:ly-neon-lg-yellow-600">Button</button>
-                    <button class="ly-dark-button ly-neon-xl-cyan-600 hover:ly-neon-xl-cyan-600">Button</button>
-                    <button class="ly-dark-button ly-neon-2xl-emerald-600 hover:ly-neon-2xl-emerald-600">Button</button>
+                <div class="flex gap-4">
+                    <p class="ly-badget">Badget</p>
+                    <p class="ly-dark-badget">Badget</p>
                 </div>
 
             </div>
 
-        </div>
+            <!-- Input -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Input</h1>
 
-        <!-- Dropzone -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Dropzone</h1>
-
-            <div class="flex gap-4">
-
-                <label for="dropzone" class="ly-dropzone">
-                    <div class="ly-dropzone-content">
-                        <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                        <p class="ly-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                        <p class="ly-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                        <input id="dropzone" type="file" class="ly-dropzone-input" />
-                    </div>
-                </label>
-
-                <label for="dropzone-2" class="ly-dark-dropzone">
-                    <div class="ly-dropzone-content">
-                        <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                        <p class="ly-dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                        <p class="ly-dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                        <input id="dropzone-2" type="file" class="ly-dark-dropzone-input" />
-                    </div>
-                </label>
+                <div class="flex gap-4">
+                    <input type="text" class="ly-input" placeholder="Input">
+                    <input type="text" class="ly-dark-input" placeholder="Input">
+                </div>
 
             </div>
 
-        </div>
+            <!-- Input file -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Input file</h1>
 
-        <!-- Modal -->
-        <div class="flex flex-col gap-2">
-            <h1 class="ly-title">Modal</h1>
+                <div class="flex gap-4">
+                    <input type="file" class="ly-input-file" placeholder="Input">
+                    <input type="file" class="ly-dark-input-file" placeholder="Input">
+                </div>
 
-            <div class="flex gap-4">
+            </div>
 
-                <div x-data="{ show_modal: false }">
-                    <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
+            <!-- Input auto width -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Input auto width</h1>
 
-                    <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="ly-modal-overlay"></div>
-                        <div class="ly-modal-content">
-                            <h1>Modal</h1>
+                <div class="flex gap-4">
+                    <input type="text" class="ly-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                    <input type="text" class="ly-dark-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
+                </div>
+
+            </div>
+
+            <!-- Select -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Select</h1>
+
+                <div class="flex gap-4">
+
+                    <div class="ly-select">
+                        <select name="" id="" class="ly-select-input">
+                            <option selected disabled>Select a option</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    </div>
+
+                    <div class="ly-select">
+                        <select name="" id="" class="ly-dark-select-input">
+                            <option selected disabled>Select a option</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                            <option value="option-3">Option 3</option>
+                        </select>
+                        <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    </div>
+
+                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                        <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-select-input"></button>
+                        <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        <div x-show="open" class="ly-custom-select-options">
+                            <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-custom-select-option">Option 1</button>
+                            <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-custom-select-option">Option 2</button>
+                            <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-custom-select-option">Option 3</button>
                         </div>
                     </div>
-                </div>
 
-                <div x-data="{ show_modal: false }">
-                    <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
-
-                    <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-75"></div>
-                        <div class="ly-modal-content">
-                            <h1>Modal</h1>
+                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                        <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-dark-select-input"></button>
+                        <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        <div x-show="open" class="ly-dark-custom-select-options">
+                            <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-dark-custom-select-option">Option 1</button>
+                            <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-dark-custom-select-option">Option 2</button>
+                            <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-dark-custom-select-option">Option 3</button>
                         </div>
                     </div>
+
                 </div>
 
-                <div x-data="{ show_modal: false }">
-                    <button x-on:click="show_modal = true" class="ly-dark-button">Open Modal</button>
+            </div>
 
-                    <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-50"></div>
-                        <div class="ly-dark-modal-content">
-                            <h1>Modal</h1>
+                        <!-- Select -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Select</h1>
+
+                <div class="flex gap-4">
+
+                    <div class="ly-select">
+                        <select name="" id="" class="ly-select-input">
+                            <option selected disabled>Select a option</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    </div>
+
+                    <div class="ly-select">
+                        <select name="" id="" class="ly-dark-select-input">
+                            <option selected disabled>Select a option</option>
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                            <option value="option-3">Option 3</option>
+                        </select>
+                        <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                    </div>
+
+                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                        <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-select-input"></button>
+                        <svg x-bind:class="open ? 'ly-select-icon-open' : ''" class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        <div x-show="open" class="ly-custom-select-options">
+                            <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-custom-select-option">Option 1</button>
+                            <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-custom-select-option">Option 2</button>
+                            <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-custom-select-option">Option 3</button>
                         </div>
                     </div>
+
+                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
+                        <input type="text" x-bind:value="value" class="ly-custom-select-input">
+                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-dark-select-input"></button>
+                        <svg x-bind:class="open ? 'ly-select-icon-open' : ''" class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        <div x-show="open" class="ly-dark-custom-select-options">
+                            <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-dark-custom-select-option">Option 1</button>
+                            <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-dark-custom-select-option">Option 2</button>
+                            <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-dark-custom-select-option">Option 3</button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div x-data="{ show_modal: false }">
-                    <button x-on:click="show_modal = true" class="ly-button">Open Blurred Modal</button>
+            </div>
 
-                    <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                        <div x-on:click="show_modal = false" class="ly-modal-blurred-overlay"></div>
-                        <div class="ly-modal-content">
-                            <h1>Modal</h1>
+            <!-- Accordion -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Accordion</h1>
+
+                <div class="flex flex-col gap-4">
+
+                    <div x-data="{open: false}" class="ly-accordion">
+                        <div x-on:click="open = !open" class="ly-accordion-header">
+                            <h1 class="ly-accordion-title">Accordion</h1>
+                            <svg x-bind:class="open ? 'ly-accordion-icon-open' : ''" class="ly-accordion-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        </div>
+                        <div class="ly-accordion-wrapper" x-bind:class="open ? 'ly-accordion-wrapper-open' : ''">
+                            <div class="ly-accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesenpellat?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-data="{open: false}" class="ly-dark-accordion">
+                        <div x-on:click="open = !open" class="ly-dark-accordion-header">
+                            <h1 class="ly-dark-accordion-title">Accordion</h1>
+                            <svg x-bind:class="open ? 'ly-accordion-icon-open' : ''" class="ly-dark-accordion-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
+                        </div>
+                        <div class="ly-accordion-wrapper" x-bind:class="open ? 'ly-accordion-wrapper-open' : ''">
+                            <div class="ly-dark-accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesenpellat?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Textarea -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Textarea</h1>
+
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-4">
+                        <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
+                        <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
+
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="ly-textarea-resize">
+                            <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
+                        </div>
+                        <div class="ly-dark-textarea-resize">
+                            <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
 
+            <!-- Card -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Card</h1>
+
+                <div class="flex gap-4">
+
+                    <div class="ly-card">
+                        <div class="ly-card-header">
+                            <h1 class="ly-card-title">Card</h1>
+                            <h1 class="ly-card-desc">Card description</h1>
+                        </div>
+                        <div class="ly-card-content">
+                            <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                        </div>
+                        <div class="ly-card-footer justify-between">
+                            <button class="ly-button">Cancel</button>
+                            <button class="ly-dark-button">Button</button>
+                        </div>
+                    </div>
+
+                    <div class="ly-dark-card">
+                        <div class="ly-card-header">
+                            <h1 class="ly-dark-card-title">Card</h1>
+                            <h1 class="ly-dark-card-desc">Card description</h1>
+                        </div>
+                        <div class="ly-card-content">
+                            <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
+                        </div>
+                        <div class="ly-card-footer justify-between">
+                            <button class="ly-dark-button">Cancel</button>
+                            <button class="ly-button">Button</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Neon -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Neon</h1>
+
+                <div class="flex gap-4">
+                    <div class="ly-dark-card flex-row gap-10">
+                        <button class="ly-dark-button ly-neon-xs-red-400 hover:ly-neon-xs-red-400">Button</button>
+                        <button class="ly-dark-button ly-neon-xs-red-600 hover:ly-neon-xs-red-600">Button</button>
+                        <button class="ly-dark-button ly-neon-xs-red-900 hover:ly-neon-xs-red-900">Button</button>
+                        <button class="ly-dark-button ly-neon-sm-blue-600 hover:ly-neon-sm-blue-600">Button</button>
+                        <button class="ly-dark-button ly-neon-md-green-600 hover:ly-neon-md-green-600">Button</button>
+                        <button class="ly-dark-button ly-neon-lg-yellow-600 hover:ly-neon-lg-yellow-600">Button</button>
+                        <button class="ly-dark-button ly-neon-xl-cyan-600 hover:ly-neon-xl-cyan-600">Button</button>
+                        <button class="ly-dark-button ly-neon-2xl-emerald-600 hover:ly-neon-2xl-emerald-600">Button</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Dropzone -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Dropzone</h1>
+
+                <div class="flex gap-4">
+
+                    <label for="dropzone" class="ly-dropzone">
+                        <div class="ly-dropzone-content">
+                            <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            <p class="ly-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                            <p class="ly-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                            <input id="dropzone" type="file" class="ly-dropzone-input" />
+                        </div>
+                    </label>
+
+                    <label for="dropzone-2" class="ly-dark-dropzone">
+                        <div class="ly-dropzone-content">
+                            <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            <p class="ly-dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
+                            <p class="ly-dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                            <input id="dropzone-2" type="file" class="ly-dark-dropzone-input" />
+                        </div>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div class="flex flex-col gap-2">
+                <h1 class="ly-title">Modal</h1>
+
+                <div class="flex gap-4">
+
+                    <div x-data="{ show_modal: false }">
+                        <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
+
+                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
+                            <div x-on:click="show_modal = false" class="ly-modal-overlay"></div>
+                            <div class="ly-modal-content">
+                                <h1>Modal</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-data="{ show_modal: false }">
+                        <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
+
+                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
+                            <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-75"></div>
+                            <div class="ly-modal-content">
+                                <h1>Modal</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-data="{ show_modal: false }">
+                        <button x-on:click="show_modal = true" class="ly-dark-button">Open Modal</button>
+
+                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
+                            <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-50"></div>
+                            <div class="ly-dark-modal-content">
+                                <h1>Modal</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-data="{ show_modal: false }">
+                        <button x-on:click="show_modal = true" class="ly-button">Open Blurred Modal</button>
+
+                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
+                            <div x-on:click="show_modal = false" class="ly-modal-blurred-overlay"></div>
+                            <div class="ly-modal-content">
+                                <h1>Modal</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>

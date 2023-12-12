@@ -152,7 +152,10 @@ let lullabyUIComponents = {
     },
 
     '.ly-select-icon': {
-        "@apply ly-text-light w-3 h-3 absolute right-2 opacity-75 pointer-events-none": {}
+        "@apply ly-text-light w-3 h-3 absolute right-2 opacity-75 pointer-events-none transition-transform duration-300 ease-in-out": {}
+    },
+    '.ly-select-icon-open': {
+        "@apply rotate-180": {},
     },
 
     '.ly-dark-select-input': {
@@ -160,7 +163,7 @@ let lullabyUIComponents = {
     },
 
     '.ly-dark-select-icon': {
-        "@apply ly-text-dark w-3 h-3 absolute right-2 opacity-75 pointer-events-none": {}
+        "@apply ly-text-dark w-3 h-3 absolute right-2 opacity-75 pointer-events-none transition-transform duration-300 ease-in-out": {}
     },
 
     '.ly-custom-select-input': {
@@ -178,6 +181,51 @@ let lullabyUIComponents = {
     },
     '.ly-dark-custom-select-option': {
         "@apply ly-text-dark-alt text-left px-2 py-1 hover:ly-bg-dark-hover hover:ly-text-dark rounded": {}
+    },
+
+
+    '.ly-accordion': {
+        "@apply ly-bg-light ly-text-light flex flex-col gap-2 border-b ly-border-light px-4 pt-2 min-h-[0] h-fit w-fit": {},
+    },
+    '.ly-accordion-header': {
+        "@apply ly-bg-light ly-text-light flex justify-between items-center cursor-pointer": {},
+    },
+    '.ly-accordion-title': {
+        "@apply ly-text-light select-none hover:underline": {},
+    },
+    '.ly-accordion-icon': {
+        "@apply ly-text-light w-3 h-3 transition-transform duration-300 ease-in-out": {},
+    },
+    '.ly-accordion-icon-open': {
+        "@apply rotate-180": {},
+    },
+    '.ly-accordion-wrapper': {
+        "@apply grid overflow-hidden py-0": {},
+        "grid-template-rows": "0fr",
+        "transition": "grid-template-rows 300ms ease-in-out, padding 300ms ease-in-out",
+    },
+    '.ly-accordion-wrapper.ly-accordion-wrapper-open': {
+        "@apply pb-4": {},
+        "grid-template-rows": "1fr",
+    },
+    '.ly-accordion-content': {
+        "@apply ly-bg-light ly-text-light min-h-[0]": {},
+    },
+
+    '.ly-dark-accordion': {
+        "@apply ly-bg-dark ly-text-dark flex flex-col gap-2 border-b ly-border-dark px-4 pt-2 min-h-[0] h-fit w-fit": {},
+    },
+    '.ly-dark-accordion-header': {
+        "@apply ly-bg-dark ly-text-dark flex justify-between items-center cursor-pointer": {},
+    },
+    '.ly-dark-accordion-title': {
+        "@apply ly-text-dark select-none hover:underline": {},
+    },
+    '.ly-dark-accordion-icon': {
+        "@apply ly-text-dark w-3 h-3 transition-transform duration-300 ease-in-out": {},
+    },
+    '.ly-dark-accordion-content': {
+        "@apply ly-bg-dark ly-text-dark min-h-[0]": {},
     },
 
     ".ly-textarea": {
