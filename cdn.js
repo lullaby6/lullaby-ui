@@ -340,7 +340,7 @@ let lullabyUIComponents = {
     },
 
     ".ly-modal-container": {
-        "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-10": {},
+        "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-50": {},
     },
     ".ly-modal-overlay": {
         "@apply w-full h-full ly-bg-dark absolute left-0 top-0 opacity-25 z-10": {},
