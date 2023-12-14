@@ -24,9 +24,15 @@ let lullabyUIComponents = {
         "@apply bg-neutral-200": {},
     },
     '.ly-border-light': {
+        "@apply border-neutral-300": {},
+    },
+    '.ly-border-light-alt': {
         "@apply border-neutral-200": {},
     },
     '.ly-ring-light': {
+        "@apply ring-neutral-300": {},
+    },
+    '.ly-ring-light-alt': {
         "@apply ring-neutral-200": {},
     },
     '.ly-light-colors': {
@@ -39,19 +45,19 @@ let lullabyUIComponents = {
         "@apply text-neutral-400": {},
     },
     '.ly-bg-dark': {
-        "@apply bg-[#111114]": {},
+        "@apply bg-[#09090B]": {},
     },
     '.ly-bg-dark-alt': {
-        "@apply bg-[#131316]": {},
+        "@apply bg-[#0C0C0F]": {},
     },
     '.ly-bg-dark-hover': {
-        "@apply bg-[#1B1B21]": {},
+        "@apply bg-[#101014]": {},
     },
     '.ly-border-dark': {
-        "@apply border-[#222228]": {},
+        "@apply border-[#27272A]": {},
     },
     '.ly-ring-dark': {
-        "@apply ring-[#222228]": {},
+        "@apply ring-[#27272A]": {},
     },
     '.ly-dark-colors': {
         "@apply ly-text-dark ly-bg-dark": {},
@@ -365,13 +371,13 @@ let lullabyUIComponents = {
         "@apply ly-bg-light ly-text-light w-fit h-fit": {}
     },
     ".ly-table-tr-head": {
-        "@apply ly-bg-light-alt border-b border-t ly-border-light": {}
+        "@apply ly-bg-light-alt border-b border-t ly-border-light-alt": {}
     },
     ".ly-table-th": {
         "@apply ly-text-light-alt font-normal py-3 px-6": {}
     },
     ".ly-table-tr": {
-        "@apply ly-text-light border-b ly-border-light": {}
+        "@apply ly-text-light border-b ly-border-light-alt": {}
     },
     ".ly-table-td": {
         "@apply ly-text-light py-3 px-6": {}
