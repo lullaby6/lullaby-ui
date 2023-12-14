@@ -8,6 +8,9 @@ let lullabyUIComponents = {
     '.ly-text-light': {
         "@apply text-neutral-600": {},
     },
+    '.ly-bg-light-black': {
+        "@apply bg-neutral-600": {},
+    },
     '.ly-text-light-alt': {
         "@apply text-neutral-500": {},
     },
@@ -95,10 +98,10 @@ let lullabyUIComponents = {
     },
 
     '.ly-link': {
-        "@apply ly-text-light cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-dark-hover before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
+        "@apply ly-text-light cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-light-black before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-300 before:ease-in-out before:hover:w-full": {},
     },
     '.ly-dark-link': {
-        "@apply ly-text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-200 before:ease-in-out before:hover:w-full": {},
+        "@apply ly-text-dark cursor-pointer relative h-fit w-fit before:content-[''] before:ly-bg-light-alt before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:transition-[width] before:duration-300 before:ease-in-out before:hover:w-full": {},
     },
 
     '.ly-badget': {
@@ -368,10 +371,42 @@ let lullabyUIComponents = {
         "@apply ly-text-light-alt font-normal py-3 px-6": {}
     },
     ".ly-table-tr": {
-        "@apply border-b ly-border-light": {}
+        "@apply ly-text-light border-b ly-border-light": {}
     },
     ".ly-table-td": {
-        "@apply py-3 px-6": {}
+        "@apply ly-text-light py-3 px-6": {}
+    },
+
+    ".ly-dark-table": {
+        "@apply ly-bg-dark ly-text-dark w-fit h-fit": {}
+    },
+    ".ly-dark-table-tr-head": {
+        "@apply ly-bg-dark-alt border-b border-t ly-border-dark": {}
+    },
+    ".ly-dark-table-th": {
+        "@apply ly-text-dark font-semibold py-3 px-6": {}
+    },
+    ".ly-dark-table-tr": {
+        "@apply ly-text-dark border-b ly-border-dark": {}
+    },
+    ".ly-dark-table-td": {
+        "@apply ly-text-dark py-3 px-6": {}
+    },
+
+    ".ly-header" : {
+        "@apply ly-text-light ly-bg-light sticky top-0 left-0 px-16 flex justify-between items-center border-b ly-border-light w-full h-14 shadow z-20": {}
+    },
+
+    ".ly-dark-header" : {
+        "@apply ly-text-dark ly-bg-dark sticky top-0 left-0 px-16 flex justify-between items-center border-b ly-border-dark w-full h-14 shadow z-20": {}
+    },
+
+    ".ly-aside": {
+        "@apply ly-text-light ly-bg-light px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit z-30": {}
+    },
+
+    ".ly-dark-aside": {
+        "@apply ly-text-dark ly-bg-dark px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit z-30": {}
     },
 
     ...genNeonComponents()

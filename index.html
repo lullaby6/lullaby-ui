@@ -16,15 +16,27 @@
     <script src="./cdn.js"></script>
 </head>
 <body class="ly-light-colors dark:ly-dark-colors transition-colors flex flex-col">
-    <header class="ly-text-light ly-bg-light sticky top-0 left-0 px-16 flex justify-between items-center border-b ly-border-light w-full h-14 shadow z-20">
-        <h1 class="ly-title font-bold text-lg">Lullaby UI</h1>
+    <header class="ly-header dark:ly-dark-header">
+        <div class="flex items-center gap-8">
+            <h1 class="ly-title dark:ly-dark-title font-bold text-lg dark:text-lg dark:text-bold">Lullaby UI</h1>
+            <nav class="flex gap-4">
+                <a class="ly-link dark:ly-dark-link">Documentation</a>
+                <a class="ly-link dark:ly-dark-link">Components</a>
+            </nav>
+        </div>
+        <div>
+            <div class="ly-theme-switcher" x-on:click="darkMode = !darkMode">
+                <svg class="ly-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
+                <svg class="ly-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
+            </div>
+        </div>
     </header>
     <div class="flex h-full">
-        <div class="ly-sidebar ly-text-light ly-bg-light px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit z-30">
-            <h1 class="ly-title text-base">Components</h1>
+        <div class="ly-aside dark:ly-dark-aside">
+            <h1 class="ly-title dark:ly-dark-title dark:text-base text-base">Components</h1>
         </div>
 
-        <main class="pl-10 py-10 flex flex-col gap-16 w-full ly-scrollbar dark:ly-dark-scrollbar border-l ly-border-light">
+        <main class="pl-10 py-10 flex flex-col gap-16 w-full ly-scrollbar dark:ly-dark-scrollbar border-l ly-border-light dark:ly-border-dark">
             <!-- Theme Switcher -->
             <div class="flex flex-col gap-2">
                 <h1 class="ly-title">Theme Switcher</h1>
@@ -372,26 +384,75 @@
 
                 <div class="flex flex-col gap-4">
 
-                    <table class="ly-table">
-                        <thead>
-                            <tr class="ly-table-tr-head">
-                                <th class="ly-table-th">First name</th>
-                                <th class="ly-table-th">Last name</th>
-                                <th class="ly-table-th">Age</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="ly-table-tr">
-                                <td class="ly-table-td">John</td>
-                                <td class="ly-table-td">Doe</td>
-                                <td class="ly-table-td">25</td>
-                            </tr>
-                            <tr class="ly-table-tr">
-                                <td class="ly-table-td">Jane</td>
-                                <td class="ly-table-td">Smith</td>
-                                <td class="ly-table-td">30</td>
-                            </tr>
-                    </table>
+                    <div class="ly-card">
+                        <table class="ly-table">
+                            <thead>
+                                <tr class="ly-table-tr-head">
+                                    <th class="ly-table-th">First name</th>
+                                    <th class="ly-table-th">Last name</th>
+                                    <th class="ly-table-th">Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="ly-table-tr">
+                                    <td class="ly-table-td">John</td>
+                                    <td class="ly-table-td">Doe</td>
+                                    <td class="ly-table-td">25</td>
+                                </tr>
+                                <tr class="ly-table-tr">
+                                    <td class="ly-table-td">Jane</td>
+                                    <td class="ly-table-td">Smith</td>
+                                    <td class="ly-table-td">30</td>
+                                </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="ly-dark-card">
+                        <table class="ly-dark-table">
+                            <thead>
+                                <tr class="ly-dark-table-tr-head">
+                                    <th class="ly-dark-table-th">First name</th>
+                                    <th class="ly-dark-table-th">Last name</th>
+                                    <th class="ly-dark-table-th">Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="ly-dark-table-tr">
+                                    <td class="ly-dark-table-td">John</td>
+                                    <td class="ly-dark-table-td">Doe</td>
+                                    <td class="ly-dark-table-td">25</td>
+                                </tr>
+                                <tr class="ly-dark-table-tr">
+                                    <td class="ly-dark-table-td">Jane</td>
+                                    <td class="ly-dark-table-td">Smith</td>
+                                    <td class="ly-dark-table-td">30</td>
+                                </tr>
+                        </table>
+                    </div>
+
+                    <div class="ly-card">
+                        <table class="ly-table">
+                            <thead>
+                                <tr class="ly-dark-table-tr-head">
+                                    <th class="ly-dark-table-th">First name</th>
+                                    <th class="ly-dark-table-th">Last name</th>
+                                    <th class="ly-dark-table-th">Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="ly-table-tr">
+                                    <td class="ly-table-td">John</td>
+                                    <td class="ly-table-td">Doe</td>
+                                    <td class="ly-table-td">25</td>
+                                </tr>
+                                <tr class="ly-table-tr">
+                                    <td class="ly-table-td">Jane</td>
+                                    <td class="ly-table-td">Smith</td>
+                                    <td class="ly-table-td">30</td>
+                                </tr>
+                        </table>
+                    </div>
 
                 </div>
 
