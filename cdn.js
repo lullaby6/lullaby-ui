@@ -2,11 +2,14 @@ let lullabyUIComponents = {
     '.ly-flex-center': {
         "@apply flex justify-center items-center": {},
     },
-    '.ly-text-light': {
+    '.ly-text-light-strong': {
         "@apply text-neutral-800": {},
     },
-    '.ly-text-light-alt': {
+    '.ly-text-light': {
         "@apply text-neutral-600": {},
+    },
+    '.ly-text-light-alt': {
+        "@apply text-neutral-500": {},
     },
     '.ly-bg-light': {
         "@apply bg-white": {},
@@ -18,10 +21,10 @@ let lullabyUIComponents = {
         "@apply bg-neutral-200": {},
     },
     '.ly-border-light': {
-        "@apply border-neutral-300": {},
+        "@apply border-neutral-200": {},
     },
     '.ly-ring-light': {
-        "@apply ring-neutral-300": {},
+        "@apply ring-neutral-200": {},
     },
     '.ly-light-colors': {
         "@apply ly-text-light ly-bg-light": {},
@@ -78,7 +81,7 @@ let lullabyUIComponents = {
     },
 
     '.ly-theme-switcher': {
-        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded-full p-1 cursor-pointer shadow hover:ly-bg-light-hover hover:shadow-md dark:ly-text-dark dark:ly-bg-dark dark:ly-border-dark dark:hover:ly-bg-dark-hover select-none": {},
+        "@apply ly-text-light-strong ly-bg-light-alt border ly-border-light rounded-full p-1 cursor-pointer shadow hover:ly-bg-light-hover hover:shadow-md dark:ly-text-dark dark:ly-bg-dark dark:ly-border-dark dark:hover:ly-bg-dark-hover select-none": {},
     },
     '.ly-theme-switcher .theme-switcher-icon': {
         "@apply w-5 h-5": {},
@@ -106,7 +109,7 @@ let lullabyUIComponents = {
     },
 
     '.ly-title': {
-        "@apply ly-text-light text-3xl font-semibold": {},
+        "@apply ly-text-light-strong text-3xl font-semibold": {},
         "text-wrap": "balance",
 
     },
@@ -284,7 +287,7 @@ let lullabyUIComponents = {
         "@apply flex flex-col w-full": {},
     },
     ".ly-card-title": {
-        "@apply ly-text-light text-2xl font-semibold": {},
+        "@apply ly-text-light-strong text-2xl font-semibold": {},
     },
     ".ly-card-desc": {
         " @apply text-light-alt": {},
@@ -353,6 +356,22 @@ let lullabyUIComponents = {
     },
     ".ly-dark-modal-content": {
         "@apply ly-text-dark ly-bg-dark rounded z-10 p-6 shadow border ly-border-dark": {},
+    },
+
+    ".ly-table": {
+        "@apply ly-bg-light ly-text-light w-fit h-fit": {}
+    },
+    ".ly-table-tr-head": {
+        "@apply ly-bg-light-alt border-b border-t ly-border-light": {}
+    },
+    ".ly-table-th": {
+        "@apply ly-text-light-alt font-normal py-3 px-6": {}
+    },
+    ".ly-table-tr": {
+        "@apply border-b ly-border-light": {}
+    },
+    ".ly-table-td": {
+        "@apply py-3 px-6": {}
     },
 
     ...genNeonComponents()
