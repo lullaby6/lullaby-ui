@@ -158,11 +158,28 @@ let lullabyUIComponents = {
     '.ly-select': {
         "@apply flex items-center relative w-fit h-fit": {}
     },
+    '.ly-select-wrapper': {
+        "@apply grid absolute left-0 -bottom-1 translate-y-[100%] w-full opacity-0": {},
+        "grid-template-rows": "0fr",
+        "transition": "grid-template-rows 300ms ease-in-out, padding 300ms ease-in-out, opacity 300ms ease-in-out",
+    },
+    '.ly-select-wrapper.ly-select-wrapper-open': {
+        "@apply opacity-100": {},
+        "grid-template-rows": "1fr",
+    },
+    '.ly-select-hide-input': {
+        "@apply hidden": {}
+    },
 
+    '.ly-select-options': {
+        "@apply ly-text-light ly-bg-light border ly-border-light rounded shadow flex flex-col gap-2 w-full min-h-[0] z-10 p-2 hover:ring-1 hover:ly-ring-light": {}
+    },
+    '.ly-select-option': {
+        "@apply ly-text-light-alt text-left px-2 py-1 hover:ly-bg-light-hover hover:ly-text-light rounded": {}
+    },
     '.ly-select-input': {
         "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-light focus:ly-bg-light cursor-pointer w-fit h-fit appearance-none": {}
     },
-
     '.ly-select-icon': {
         "@apply ly-text-light w-3 h-3 absolute right-2 opacity-75 pointer-events-none transition-transform duration-300 ease-in-out": {}
     },
@@ -173,25 +190,13 @@ let lullabyUIComponents = {
     '.ly-dark-select-input': {
         "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-dark focus:ly-bg-dark cursor-pointer w-fit h-fit appearance-none": {}
     },
-
     '.ly-dark-select-icon': {
         "@apply ly-text-dark w-3 h-3 absolute right-2 opacity-75 pointer-events-none transition-transform duration-300 ease-in-out": {}
     },
-
-    '.ly-custom-select-input': {
-        "@apply hidden": {}
+    '.ly-dark-select-options': {
+        "@apply overflow-hidden ly-text-dark ly-bg-dark border ly-border-dark rounded shadow flex flex-col gap-2 w-full min-h-[0] z-10 p-2 hover:ring-1 hover:ly-ring-dark": {}
     },
-    '.ly-custom-select-options': {
-        "@apply ly-text-light ly-bg-light border ly-border-light rounded shadow absolute left-0 -bottom-1 flex flex-col gap-2 w-full h-fit translate-y-[100%] z-10 p-2 hover:ring-1 hover:ly-ring-light": {}
-    },
-    '.ly-custom-select-option': {
-        "@apply ly-text-light-alt text-left px-2 py-1 hover:ly-bg-light-hover hover:ly-text-light rounded": {}
-    },
-
-    '.ly-dark-custom-select-options': {
-        "@apply ly-text-dark ly-bg-dark border ly-border-dark rounded shadow absolute left-0 -bottom-1 flex flex-col gap-2 w-full h-fit translate-y-[100%] z-10 p-2 hover:ring-1 hover:ly-ring-dark": {}
-    },
-    '.ly-dark-custom-select-option': {
+    '.ly-dark-select-option': {
         "@apply ly-text-dark-alt text-left px-2 py-1 hover:ly-bg-dark-hover hover:ly-text-dark rounded": {}
     },
 
@@ -212,7 +217,7 @@ let lullabyUIComponents = {
         "@apply rotate-180": {},
     },
     '.ly-accordion-wrapper': {
-        "@apply grid overflow-hidden py-0": {},
+        "@apply grid overflow-hidden": {},
         "grid-template-rows": "0fr",
         "transition": "grid-template-rows 300ms ease-in-out, padding 300ms ease-in-out",
     },
@@ -240,6 +245,7 @@ let lullabyUIComponents = {
         "@apply ly-bg-dark ly-text-dark min-h-[0]": {},
     },
 
+
     ".ly-textarea": {
         "@apply ly-text-light ly-bg-light-alt border ly-border-light relative rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {},
         "reisze": "horizontal",
@@ -248,7 +254,8 @@ let lullabyUIComponents = {
     ".ly-textarea-resize": {
         "@apply relative w-fit h-fit before:content-['']": {}
     },
-    ".ly-textarea-resize .ly-textarea::-webkit-resizer": {},
+    ".ly-textarea-resize .ly-textarea::-webkit-resizer":{
+    },
     ".ly-textarea-resize::before": {
         "content": "",
         "position": "absolute",
@@ -263,6 +270,7 @@ let lullabyUIComponents = {
         "transform": "rotate(135deg)",
         "translate": "4.5px -5px",
     },
+
     ".ly-dark-textarea": {
         "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder:ly-text-dark-alt rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow min-h-[75px] h-[75px] max-h-[250px]": {},
         "reisze": "horizontal",
@@ -288,6 +296,7 @@ let lullabyUIComponents = {
         "transform": "rotate(135deg)",
         "translate": "4.5px -5px",
     },
+
 
     ".ly-card": {
         "@apply ly-text-light ly-bg-light flex flex-col gap-4 p-6 shadow border ly-border-light rounded shadow w-fit h-fit": {},
@@ -316,6 +325,7 @@ let lullabyUIComponents = {
     ".ly-dark-card-desc": {
         "@apply ly-text-dark-alt": {},
     },
+
 
     ".ly-dropzone": {
         "@apply ly-text-light ly-bg-light-alt flex flex-col items-center justify-center w-[500px] h-64 border-2 ly-border-light border-dashed rounded-lg cursor-pointer shadow hover:shadow-md hover:ly-bg-light-hover": {},
@@ -351,6 +361,7 @@ let lullabyUIComponents = {
         "@apply ly-text-dark-alt file:hidden text-xs text-center flex justify-center items-center w-[125px]": {},
     },
 
+
     ".ly-modal-container": {
         "@apply w-screen h-screen fixed left-0 top-0 flex justify-center items-center z-50": {},
     },
@@ -366,6 +377,7 @@ let lullabyUIComponents = {
     ".ly-dark-modal-content": {
         "@apply ly-text-dark ly-bg-dark rounded z-10 p-6 shadow border ly-border-dark": {},
     },
+
 
     ".ly-table": {
         "@apply ly-bg-light ly-text-light w-fit h-fit": {}
@@ -398,6 +410,7 @@ let lullabyUIComponents = {
     ".ly-dark-table-td": {
         "@apply ly-text-dark py-3 px-6": {}
     },
+
 
     ".ly-header" : {
         "@apply ly-text-light ly-bg-light sticky top-0 left-0 px-16 flex justify-between items-center border-b ly-border-light w-full h-14 shadow z-20": {}
