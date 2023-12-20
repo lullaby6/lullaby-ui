@@ -23,6 +23,9 @@ let lullabyUIComponents = {
     '.ly-bg-light-hover': {
         "@apply bg-neutral-200": {},
     },
+    '.ly-bg-light-border': {
+        "@apply bg-neutral-300": {},
+    },
     '.ly-border-light': {
         "@apply border-neutral-300": {},
     },
@@ -52,6 +55,9 @@ let lullabyUIComponents = {
     },
     '.ly-bg-dark-hover': {
         "@apply bg-[#101014]": {},
+    },
+    '.ly-bg-dark-border': {
+        "@apply bg-[#27272A]": {},
     },
     '.ly-border-dark': {
         "@apply border-[#27272A]": {},
