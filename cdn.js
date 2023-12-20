@@ -434,6 +434,13 @@ let lullabyUIComponents = {
         "@apply ly-text-dark ly-bg-dark px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit z-30": {}
     },
 
+    ".ly-separator": {
+        "@apply w-full h-[1.0px] ly-bg-light-border rounded-full my-2": {}
+    },
+    ".ly-dark-separator": {
+        "@apply w-full h-[1.0px] ly-bg-dark-border rounded-full my-2": {}
+    },
+
     ...genNeonComponents()
 }
 
