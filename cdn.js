@@ -150,6 +150,19 @@ let lullabyUIComponents = {
         "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
     },
 
+    '.ly-input-icon': {
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light pl-1 pr-2 py-1 shadow h-fit flex items-center gap-1": {}
+    },
+    '.ly-input-icon input': {
+        "@apply focus:outline-none": {}
+    },
+    '.ly-dark-input-icon': {
+        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark pl-1 pr-2 py-1 shadow h-fit flex items-center gap-1": {}
+    },
+    '.ly-dark-input-icon input': {
+        "@apply focus:outline-none bg-transparent": {}
+    },
+
     '.ly-input-file': {
         "@apply ly-text-light-alt ly-bg-light-alt file:px-3 file:py-1 file:border-none file:ly-bg-light-hover file:h-full file:ly-text-light-alt file:cursor-pointer rounded border ly-border-light p-0 m-0 cursor-pointer hover:ring-1 hover:ly-ring-light shadow pr-2 h-fit": {}
     },
@@ -184,7 +197,7 @@ let lullabyUIComponents = {
         "@apply ly-text-light-alt text-left px-2 py-1 hover:ly-bg-light-hover hover:ly-text-light rounded": {}
     },
     '.ly-select-input': {
-        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-light focus:ly-bg-light cursor-pointer w-fit h-fit appearance-none": {}
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded pl-2 pr-10 py-1 focus:outline-none shadow hover:shadow-md hover:ring-1 hover:ly-ring-light focus:ly-bg-light cursor-pointer w-fit h-fit appearance-none w-full": {}
     },
     '.ly-select-icon': {
         "@apply ly-text-light w-3 h-3 absolute right-2 opacity-75 pointer-events-none transition-transform duration-300 ease-in-out": {}
