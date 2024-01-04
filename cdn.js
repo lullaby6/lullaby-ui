@@ -154,7 +154,7 @@ let lullabyUIComponents = {
         "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light pl-1 pr-2 py-1 shadow h-fit flex items-center gap-1": {}
     },
     '.ly-input-icon input': {
-        "@apply focus:outline-none": {}
+        "@apply focus:outline-none bg-transparent": {}
     },
     '.ly-dark-input-icon': {
         "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark pl-1 pr-2 py-1 shadow h-fit flex items-center gap-1": {}
