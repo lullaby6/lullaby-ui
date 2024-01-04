@@ -454,6 +454,34 @@ let lullabyUIComponents = {
         "@apply w-full h-[1.0px] ly-bg-dark-border rounded-full my-2": {}
     },
 
+    ".ly-tooltip-container": {
+        "@apply relative": {}
+    },
+    ".ly-tooltip-container:hover .ly-tooltip": {
+        "@apply opacity-100": {}
+    },
+    ".ly-tooltip-container:hover .ly-dark-tooltip": {
+        "@apply opacity-100": {}
+    },
+    ".ly-tooltip": {
+        "@apply pointer-events-none opacity-0 transition-opacity ly-bg-light ly-text-light border ly-border-light rounded px-4 py-0.5 absolute top-0 left-0 duration-200": {}
+    },
+    ".ly-dark-tooltip": {
+        "@apply pointer-events-none opacity-0 transition-opacity ly-bg-dark ly-text-dark border ly-border-dark rounded px-4 py-0.5 absolute top-0 left-0 duration-200": {}
+    },
+    ".ly-tooltip-t": {
+        "@apply -translate-y-[110%] left-[50%] translate-x-[-50%]": {}
+    },
+    ".ly-tooltip-b": {
+        "@apply top-full left-[50%] translate-x-[-50%] mt-1": {}
+    },
+    ".ly-tooltip-l": {
+        "@apply -translate-x-[110%] top-[50%] translate-y-[-50%] mr-1": {}
+    },
+    ".ly-tooltip-r": {
+        "@apply left-full top-[50%] translate-y-[-50%] ml-1": {}
+    },
+
     ...genNeonComponents()
 }
 
