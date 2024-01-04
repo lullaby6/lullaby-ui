@@ -163,6 +163,26 @@ let lullabyUIComponents = {
         "@apply focus:outline-none bg-transparent": {}
     },
 
+    '.ly-input-icon-alt': {
+        "@apply border ly-bg-light-alt ly-text-light ly-border-light rounded relative flex items-center justify-center": {}
+    },
+    '.ly-input-icon-alt input': {
+        "@apply px-2 py-1 ly-text-light ly-bg-light-alt focus:outline-none": {}
+    },
+    '.ly-input-icon-alt-icon': {
+        "@apply ly-bg-light-hover border-r ly-border-light h-full px-3 flex items-center justify-center font-semibold": {}
+    },
+
+    '.ly-dark-input-icon-alt': {
+        "@apply border ly-bg-dark-alt ly-text-dark ly-border-dark rounded relative flex items-center justify-center": {}
+    },
+    '.ly-dark-input-icon-alt input': {
+        "@apply px-2 py-1 ly-text-dark ly-bg-dark-alt focus:outline-none": {}
+    },
+    '.ly-dark-input-icon-alt-icon': {
+        "@apply ly-bg-dark-hover border-r ly-border-dark h-full px-3 flex items-center justify-center font-semibold": {}
+    },
+
     '.ly-input-file': {
         "@apply ly-text-light-alt ly-bg-light-alt file:px-3 file:py-1 file:border-none file:ly-bg-light-hover file:h-full file:ly-text-light-alt file:cursor-pointer rounded border ly-border-light p-0 m-0 cursor-pointer hover:ring-1 hover:ly-ring-light shadow pr-2 h-fit": {}
     },
