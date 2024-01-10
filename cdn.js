@@ -144,10 +144,16 @@ let lullabyUIComponents = {
     },
 
     '.ly-input': {
-        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow h-fit": {}
+        "@apply transition-colors ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow h-fit": {}
+    },
+    '.ly-input[disabled]': {
+        "@apply ly-bg-light-hover": {}
     },
     '.ly-dark-input': {
-        "@apply ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
+        "@apply ransition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
+    },
+    '.ly-dark-input:disabled': {
+        "@apply ly-bg-dark-hover": {}
     },
 
     '.ly-input-icon': {
