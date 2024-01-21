@@ -2,17 +2,17 @@ let lullabyUIComponents = {
     '.ly-flex-center': {
         "@apply flex justify-center items-center": {},
     },
+    '.ly-text-light-alt': {
+        "@apply text-neutral-500": {},
+    },
+    '.ly-text-light': {
+        "@apply text-neutral-700": {},
+    },
     '.ly-text-light-strong': {
         "@apply text-neutral-800": {},
     },
-    '.ly-text-light': {
-        "@apply text-neutral-600": {},
-    },
     '.ly-bg-light-black': {
         "@apply bg-neutral-600": {},
-    },
-    '.ly-text-light-alt': {
-        "@apply text-neutral-500": {},
     },
     '.ly-bg-light': {
         "@apply bg-white": {},
@@ -134,13 +134,17 @@ let lullabyUIComponents = {
     },
 
     '.ly-text': {
-        "@apply ly-text-light text-base": {},
-        "text-wrap": "pretty",
-
+        "@apply ly-text-light text-base text-pretty": {},
     },
     '.ly-dark-text': {
-        "@apply ly-text-dark text-base": {},
-        "text-wrap": "pretty",
+        "@apply ly-text-dark text-base text-pretty": {},
+    },
+
+    '.ly-read-text': {
+        "@apply ly-text-light text-base text-pretty leading-relaxed tracking-wide": {},
+    },
+    '.ly-dark-read-text': {
+        "@apply ly-text-dark text-base text-pretty leading-relaxed tracking-wide": {},
     },
 
     '.ly-input': {
@@ -150,7 +154,7 @@ let lullabyUIComponents = {
         "@apply ly-bg-light-hover": {}
     },
     '.ly-dark-input': {
-        "@apply ransition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
+        "@apply transition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
     },
     '.ly-dark-input:disabled': {
         "@apply ly-bg-dark-hover": {}
