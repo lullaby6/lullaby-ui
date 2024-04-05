@@ -2,19 +2,17 @@ let lullabyUIComponents = {
     '.ly-flex-center': {
         "@apply flex justify-center items-center": {},
     },
-
-
+    '.ly-text-light-alt': {
+        "@apply text-neutral-500": {},
+    },
+    '.ly-text-light': {
+        "@apply text-neutral-700": {},
+    },
     '.ly-text-light-strong': {
         "@apply text-neutral-800": {},
     },
-    '.ly-text-light': {
-        "@apply text-neutral-600": {},
-    },
     '.ly-bg-light-black': {
         "@apply bg-neutral-600": {},
-    },
-    '.ly-text-light-alt': {
-        "@apply text-neutral-500": {},
     },
     '.ly-bg-light': {
         "@apply bg-white": {},
@@ -105,7 +103,7 @@ let lullabyUIComponents = {
     },
 
     '.ly-button': {
-        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded px-4 py-1 shadow hover:shadow-md hover:ly-bg-light-hover h-fit w-fit": {},
+        "@apply ly-text-light ly-bg-light-alt border ly-border-light rounded px-4 py-1 shadow hover:shadow-md hover:ly-bg-light-hover h-fit w-fit transition-opacity disabled:opacity-50 disabled:cursor-not-allowed": {},
     },
     '.ly-dark-button': {
         "@apply ly-text-dark ly-bg-dark-alt font-semibold border ly-border-dark rounded px-4 py-1 shadow hover:shadow-md hover:ly-bg-dark-hover h-fit w-fit": {},
@@ -136,26 +134,24 @@ let lullabyUIComponents = {
     },
 
     '.ly-text': {
-        "@apply ly-text-light text-base": {},
-        "text-wrap": "pretty",
-
+        "@apply ly-text-light text-base text-pretty": {},
     },
     '.ly-dark-text': {
-        "@apply ly-text-dark text-base": {},
-        "text-wrap": "pretty",
+        "@apply ly-text-dark text-base text-pretty": {},
+    },
+
+    '.ly-read-text': {
+        "@apply ly-text-light text-base text-pretty leading-relaxed tracking-wide": {},
+    },
+    '.ly-dark-read-text': {
+        "@apply ly-text-dark text-base text-pretty leading-relaxed tracking-wide": {},
     },
 
     '.ly-input': {
-        "@apply transition-colors ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow h-fit": {}
-    },
-    '.ly-input[disabled]': {
-        "@apply ly-bg-light-hover": {}
+        "@apply transition-colors ly-text-light ly-bg-light-alt border ly-border-light rounded focus:outline-none focus:ring-1 focus:ly-ring-light px-2 py-1 shadow h-fit disabled:ly-bg-light-hover disabled:cursor-not-allowed": {}
     },
     '.ly-dark-input': {
-        "@apply transition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
-    },
-    '.ly-dark-input:disabled': {
-        "@apply ly-bg-dark-hover": {}
+        "@apply transition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit disabled:ly-bg-light-hover disabled:cursor-not-allowed": {}
     },
 
     '.ly-input-icon': {
