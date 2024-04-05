@@ -2,6 +2,8 @@ let lullabyUIComponents = {
     '.ly-flex-center': {
         "@apply flex justify-center items-center": {},
     },
+
+
     '.ly-text-light-strong': {
         "@apply text-neutral-800": {},
     },
@@ -150,7 +152,7 @@ let lullabyUIComponents = {
         "@apply ly-bg-light-hover": {}
     },
     '.ly-dark-input': {
-        "@apply ransition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
+        "@apply transition-colors ly-text-dark ly-bg-dark-alt border ly-border-dark placeholder-neutral-500  rounded focus:outline-none focus:ring-1 focus:ly-ring-dark px-2 py-1 shadow h-fit": {}
     },
     '.ly-dark-input:disabled': {
         "@apply ly-bg-dark-hover": {}
@@ -473,12 +475,20 @@ let lullabyUIComponents = {
         "@apply ly-text-dark ly-bg-dark px-16 py-5 flex flex-col items-center sticky left-0 top-14 h-fit z-30": {}
     },
 
+
     ".ly-separator": {
         "@apply w-full h-[1.0px] ly-bg-light-border rounded-full my-2": {}
     },
     ".ly-dark-separator": {
         "@apply w-full h-[1.0px] ly-bg-dark-border rounded-full my-2": {}
     },
+    ".ly-thin-separator": {
+        "@apply w-full h-[0.5px] ly-bg-light-border rounded-full my-2": {}
+    },
+    ".ly-thin-dark-separator": {
+        "@apply w-full h-[0.5px] ly-bg-dark-border rounded-full my-2": {}
+    },
+
 
     ".ly-tooltip-container": {
         "@apply relative": {}
@@ -507,54 +517,19 @@ let lullabyUIComponents = {
     ".ly-tooltip-r": {
         "@apply left-full top-[50%] translate-y-[-50%] ml-1": {}
     },
-
-    ...genNeonComponents()
-}
-
-function genNeonComponents() {
-    const neonComponents = {}
-
-    const sizes = {
-        xs: 4,
-        sm: 8,
-        md: 12,
-        lg: 16,
-        xl: 20,
-        '2xl': 24,
-    }
-
-    const colors = ['slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
-
-    const colorValues = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900']
-
-    Object.entries(sizes).forEach(([size, sizeValue]) => {
-        colors.forEach(color => {
-            colorValues.forEach(colorValue => {
-                const neonComponentName = `.ly-neon-${size}-${color}-${colorValue}`
-                const neonComponentValue = {
-                    "box-shadow": `0 0 ${sizeValue}px 2.5px theme('colors.${color}.${colorValue}')`,
-                }
-                neonComponents[neonComponentName] = neonComponentValue
-            })
-        })
-    })
-
-    return neonComponents
 }
 
 const tailwindConfig = document.createElement('script');
+
 tailwindConfig.innerHTML = `
-const lullabyUIPlugin = tailwind.plugin(function lullabyUI({ addComponents }) {
-    addComponents(${JSON.stringify(lullabyUIComponents)});
-})
+    const lullabyUIPlugin = tailwind.plugin(function ({ addComponents }) {
+        addComponents(${JSON.stringify(lullabyUIComponents)});
+    })
 
-if(!tailwind.config.plugins) tailwind.config.plugins = []
+    if(!tailwind.config.plugins) tailwind.config.plugins = []
 
-tailwind.config = {
-    ...tailwind.config,
-    darkMode: 'class',
-    plugins: [...tailwind.config.plugins, lullabyUIPlugin],
-}
+    tailwind.config.darkMode = 'class'
+    tailwind.config.plugins.push(lullabyUIPlugin)
 `;
 
 document.head.appendChild(tailwindConfig);
