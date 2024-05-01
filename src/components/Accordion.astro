@@ -1,0 +1,20 @@
+---
+interface Props {
+	className?: string;
+	title: string;
+}
+
+const { className, title } = Astro.props;
+---
+
+<div x-data="{open: false}" class={"min-h-[0] h-fit w-fit px-4 pt-2 flex flex-col gap-2 text-neutral-800 bg-white border-b border-neutral-200 " + className}>
+	<div x-on:click="open = !open" class="flex justify-between items-center cursor-pointer select-none">
+		<h1>Accordion</h1>
+		<svg x-bind:class="open ? 'rotate-180' : ''" class="text-2xl text-neutral-800 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m7 10l5 5l5-5"/></svg>
+	</div>
+	<div x-bind:class="open && 'pb-4 !grid-rows-1'" class="grid overflow-hidden grid-rows-[0fr]" style="transition: all 300ms ease-in-out;">
+		<div class="min-h-[0]">
+			<slot />
+		</div>
+	</div>
+</div>

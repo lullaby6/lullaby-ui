@@ -1,0 +1,19 @@
+---
+interface Props {
+	id?: string;
+	attributes?: object;
+	className?: string;
+	name?: string;
+	placeHolder?: string;
+	value?: string;
+	spellCheck?: boolean;
+	disabled?: boolean;
+	required?: boolean;
+	readOnly?: boolean;
+	type?: any;
+}
+
+const { id, attributes, className, name, placeHolder, value, spellCheck = false, disabled, required, readOnly, type = "text" } = Astro.props;
+---
+
+<input class={`px-3 py-1.5 text-neutral-800 bg-white border border-neutral-200 focus:outline-none focus:bg-white focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1 [&[error]]:ring-1 [&[error]]:ring-offset-1 [&[error]]:!ring-red-400 disabled:opacity-[0.6] disabled:cursor-not-allowed transition-colors shadow-sm rounded-lg ${className}`} id={id} name={name} placeholder={placeHolder} value={value} spellcheck={spellCheck} disabled={disabled} required={required} readonly={readOnly} type={type} {...attributes}/>

@@ -1,0 +1,54 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+import Button from '@/components/Button.astro';
+import Badge from '@/components/Badge.astro';
+import Input from '@/components/Input.astro';
+import InputNumber from '@/components/InputNumber.astro';
+import InputFile from '@/components/InputFile.astro';
+import Checkbox from '@/components/Checkbox.astro';
+import TextArea from '@/components/TextArea.astro';
+import Separator from '@/components/Separator.astro';
+---
+
+<Layout title="Lullaby UI">
+	<main class="w-screen min-h-screen px-[15vw] py-[7.5vh] flex flex-col gap-10 bg-white">
+		<div class="flex justify-evenly">
+			<Button>Button2</Button>
+			<Button hover="outline">Button</Button>
+			<Button variant="alt">Button</Button>
+			<Button variant="alt" hover='outline'>Button</Button>
+			<Button variant="ghost">Button</Button>
+			<Button variant="ghost" hover='outline'>Button</Button>
+		</div>
+
+		<div class="flex justify-evenly">
+			<Badge>Badge</Badge>
+			<Badge variant="alt">Badge</Badge>
+			<Badge variant="ghost">Badge</Badge>
+		</div>
+
+		<div class="flex justify-center">
+			<Input placeHolder='Input' />
+		</div>
+
+		<div class="flex justify-center">
+			<InputNumber />
+		</div>
+
+		<div class="flex justify-center">
+			<InputFile />
+		</div>
+
+		<Checkbox />
+
+		<Separator />
+
+		<div class="flex justify-center">
+			<TextArea />
+		</div>
+		<!-- <Accordion title="Accordion">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut fuga ducimus laudantium deserunt? Iusto consequuntur reprehenderit veniam quos fugit sunt laborum facere. At, accusamus. Sed amet esse tenetur ut eligendi?
+		</Accordion> -->
+	</main>
+</Layout>

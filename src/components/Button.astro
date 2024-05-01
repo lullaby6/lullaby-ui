@@ -1,0 +1,40 @@
+---
+interface Props {
+	id?: string;
+	attributes?: object;
+	className?: string;
+	disabled?: boolean;
+	type?: "button" | "submit" | "reset";
+	variant?: string;
+	hover?: string;
+}
+
+const { id, attributes, className, disabled, type = "button", variant, hover } = Astro.props;
+
+let colors = "text-neutral-800 bg-white border border-neutral-200";
+let hoverStyles = "hover:bg-neutral-100"
+
+if (hover == "outline") {
+	hoverStyles = "hover:ring-1 hover:ring-neutral-300 hover:ring-offset-1"
+}
+
+if (variant === "alt") {
+	colors = "text-neutral-50 bg-neutral-800";
+	hoverStyles = "hover:bg-neutral-700"
+
+	if (hover == "outline") {
+		hoverStyles = "hover:ring-1 hover:ring-neutral-800 hover:ring-offset-1"
+	}
+} else if (variant === "ghost") {
+	colors = 'text-neutral-800 bg-neutral-100';
+	hoverStyles = "hover:bg-neutral-200"
+
+	if (hover == "outline") {
+		hoverStyles = "hover:ring-1 hover:ring-neutral-300 hover:ring-offset-1"
+	}
+}
+---
+
+<button class={`w-fit px-4 py-1 flex justify-center items-center gap-1 transition-colors rounded-lg shadow-sm cursor-pointer ${colors} ${hoverStyles} ${className}`} id={id} disabled={disabled} type={type} {...attributes}>
+    <slot />
+</button>

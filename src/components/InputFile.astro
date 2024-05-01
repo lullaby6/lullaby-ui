@@ -1,0 +1,18 @@
+---
+interface Props {
+	id?: string;
+	attributes?: object;
+	className?: string;
+	name?: string;
+	placeHolder?: string;
+	value?: string;
+	spellCheck?: boolean;
+	disabled?: boolean;
+	required?: boolean;
+	readOnly?: boolean;
+}
+
+const { id, attributes, className, name, placeHolder, value, spellCheck = false, disabled, required, readOnly } = Astro.props;
+---
+
+<input class={`text-neutral-800 bg-white border border-neutral-200 focus:outline-none focus:bg-white hover:ring-1 hover:ring-neutral-300 hover:ring-offset-1 focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1 [&[error]]:ring-1 [&[error]]:ring-offset-1 [&[error]]:!ring-red-400 disabled:opacity-[0.6] disabled:cursor-not-allowed transition-colors shadow-sm rounded-lg file:px-4 file:py-1.5 file:border-none file:bg-neutral-100 file:text-neutral-800 file:cursor-pointer file:mr-2 cursor-pointer ${className}`} type="file" id={id} name={name} placeholder={placeHolder} value={value} spellcheck={spellCheck} disabled={disabled} required={required} readonly={readOnly} {...attributes}/>

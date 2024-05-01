@@ -1,0 +1,18 @@
+---
+interface Props {
+    id?: string;
+    attributes?: object;
+    className?: string;
+	height?: number;
+}
+
+const { id, attributes, className, height } = Astro.props;
+
+let heightClass = "h-[0.5px]";
+
+if (height) {
+    heightClass = `h-[${height}px]`
+}
+---
+
+<span class={`w-full bg-neutral-200 rounded-full my-2 ${heightClass} ${className}`} id={id} {...attributes}></span>
