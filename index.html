@@ -1,555 +1,165 @@
 <!DOCTYPE html>
-<html
-    lang="en"
-    x-data="{darkMode: $persist(false)}"
-    x-bind:class="darkMode ? 'dark' : ''"
->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lullaby UI</title>
+    <title>Taily UI</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <script src="./cdn.js"></script>
+    <script src="./tailui.cdn.js"></script>
 </head>
-<body class="ly-light-colors dark:ly-dark-colors transition-colors flex flex-col">
-    <header class="ly-header dark:ly-dark-header">
-        <div class="flex items-center gap-8">
-            <h1 class="ly-title dark:ly-dark-title font-bold text-lg dark:text-lg dark:text-bold">Lullaby UI</h1>
-            <nav class="flex gap-4">
-                <a class="ly-link dark:ly-dark-link">Documentation</a>
-                <a class="ly-link dark:ly-dark-link">Components</a>
-            </nav>
+<body class="flex-center flex-col max-w-screen min-h-screen py-10 gap-10">
+    <div class="container">
+        <button class="btn">Button</button>
+        <button class="btn-outline">Button</button>
+        <button class="btn-alt">Button</button>
+        <button class="btn-alt-outline">Button</button>
+        <button class="btn-ghost">Button</button>
+        <button class="btn-ghost-outline">Button</button>
+    </div>
+
+    <div class="container">
+        <a class="link">Link</a>
+        <a class="link-animated">Link</a>
+    </div>
+
+    <div class="container">
+        <button class="badge">Badge</button>
+        <button class="badge-alt">Badge</button>
+        <button class="badge-ghost">Badge</button>
+    </div>
+
+    <div class="container flex-col">
+        <h1 class="title">Title</h1>
+        <span class="separator"></span>
+        <a class="text w-64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat nam sequi dolor? Maiores odio ipsum minus, sapiente unde, libero in magni rerum voluptatum, ut quis. Libero blanditiis fuga autem.</a>
+    </div>
+
+    <div class="container flex-col">
+        <input type="text" name="" id="" placeholder="Input..." class="input">
+        <input type="text" name="" id="" placeholder="Input..." class="input" error>
+        <input type="text" name="" id="" placeholder="Input..." class="input" disabled>
+    </div>
+
+    <div class="container flex-col">
+        <div class="input-icon">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3m0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8"/></svg>
+            </span>
+            <input type="text" name="" id="" class="left">
         </div>
-        <div>
-            <div class="ly-theme-switcher" x-on:click="darkMode = !darkMode">
-                <svg class="ly-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
-                <svg class="ly-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
-            </div>
-        </div>
-    </header>
-    <div class="flex h-full">
-        <div class="ly-aside dark:ly-dark-aside">
-            <h1 class="ly-title dark:ly-dark-title dark:text-base text-base">Components</h1>
+
+        <div class="input-icon">
+            <input type="text" name="" id="" class="right">
+            <span class="icon -rotate-90">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3m0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8"/></svg>
+            </span>
         </div>
 
-        <main class="pl-10 py-10 flex flex-col gap-16 w-full ly-scrollbar dark:ly-dark-scrollbar border-l ly-border-light dark:ly-border-dark">
-            <!-- Theme Switcher -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Theme Switcher</h1>
 
-                <div class="flex gap-4">
-                    <div class="ly-theme-switcher" x-on:click="darkMode = !darkMode">
-                        <svg class="ly-theme-switcher-icon" x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></svg>
-                        <svg class="ly-theme-switcher-icon" x-show="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Button -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Button</h1>
-
-                <div class="flex gap-4">
-                    <button class="ly-button">Button</button>
-                    <button class="ly-dark-button">Button</button>
-                    <button class="ly-button dark:ly-dark-button">Button</button>
-                </div>
-
-            </div>
-
-            <!-- Link -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Link</h1>
-
-                <div class="flex flex-col gap-4">
-                    <div class="flex gap-4 ly-card flex-row">
-                        <a href="#hola" class="ly-link">Link</a>
-                        <a href="#hola" class="ly-link px-1">Link</a>
-                        <a href="#hola" class="ly-link px-2">Link</a>
-                        <a href="#hola" class="ly-link text-lg">Link</a>
-                        <a href="#hola" class="ly-link text-xl">Link</a>
-                        <a href="#hola" class="ly-link text-2xl">Link</a>
-                    </div>
-                    <div class="flex gap-4 ly-dark-card flex-row">
-                        <a href="#hola" class="ly-dark-link">Link</a>
-                        <a href="#hola" class="ly-dark-link px-1">Link</a>
-                        <a href="#hola" class="ly-dark-link px-2">Link</a>
-                        <a href="#hola" class="ly-dark-link text-lg">Link</a>
-                        <a href="#hola" class="ly-dark-link text-xl">Link</a>
-                        <a href="#hola" class="ly-dark-link text-2xl">Link</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Badget -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Badget</h1>
-
-                <div class="flex gap-4">
-                    <p class="ly-badget">Badget</p>
-                    <p class="ly-dark-badget">Badget</p>
-                </div>
-
-            </div>
-
-            <!-- Input -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Input</h1>
-
-                <div class="flex gap-4">
-                    <input type="text" class="ly-input" placeholder="Input">
-                    <input type="text" class="ly-dark-input" placeholder="Input">
-                </div>
-
-            </div>
-
-            <!-- Input Icon -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Input Icon</h1>
-
-                <div class="flex gap-4">
-                    <div class="ly-input-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"/></svg>
-                        <input type="text" placeholder="Input">
-                    </div>
-
-                    <div class="ly-dark-input-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"/></svg>
-                        <input type="text" placeholder="Input">
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Input Icon Alt -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Input Icon Alt</h1>
-
-                <div class="flex gap-4">
-                    <div class="ly-input-icon-alt">
-                        <span class="ly-input-icon-alt-icon">€</span>
-                        <input type="text" placeholder="Input">
-                    </div>
-
-                    <div class="ly-dark-input-icon-alt">
-                        <span class="ly-dark-input-icon-alt-icon">€</span>
-                        <input type="text" placeholder="Input">
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Input file -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Input file</h1>
-
-                <div class="flex gap-4">
-                    <input type="file" class="ly-input-file" placeholder="Input">
-                    <input type="file" class="ly-dark-input-file" placeholder="Input">
-                </div>
-
-            </div>
-
-            <!-- Input auto width -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Input auto width</h1>
-
-                <div class="flex gap-4">
-                    <input type="text" class="ly-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-                    <input type="text" class="ly-dark-input ly-input-auto-width" placeholder="Input" x-on:input="event.target.style.width = `${event.target.value.length}ch`">
-                </div>
-
-            </div>
-
-            <!-- Select -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Select</h1>
-
-                <div class="flex gap-4">
-
-                    <div class="ly-select">
-                        <select name="" id="" class="ly-select-input">
-                            <option selected disabled>Select a option</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                            <option value="">Option 3</option>
-                        </select>
-                        <svg class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                    </div>
-
-                    <div class="ly-select">
-                        <select name="" id="" class="ly-dark-select-input">
-                            <option selected disabled>Select a option</option>
-                            <option value="option-1">Option 1</option>
-                            <option value="option-2">Option 2</option>
-                            <option value="option-3">Option 3</option>
-                        </select>
-                        <svg class="ly-dark-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                    </div>
-
-
-                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
-                        <input type="text" x-bind:value="value" class="ly-select-hide-input">
-                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-select-input"></button>
-                        <svg x-bind:class="open ? 'ly-select-icon-open' : ''" class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                        <div class="ly-select-wrapper" x-bind:class="open ? 'ly-select-wrapper-open' : ''">
-                            <div class="ly-select-options">
-                                <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-select-option">Option 1</button>
-                                <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-select-option">Option 2</button>
-                                <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-select-option">Option 3</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div x-data="{open: false, text: 'Select a option', value: ''}" class="ly-select">
-                        <input type="text" x-bind:value="value" class="ly-select-hide-input">
-                        <button x-on:click="open = !open" x-text="text" type="text" class="ly-dark-select-input"></button>
-                        <svg x-bind:class="open ? 'ly-select-icon-open' : ''" class="ly-select-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                        <div class="ly-select-wrapper" x-bind:class="open ? 'ly-select-wrapper-open' : ''">
-                            <div class="ly-dark-select-options">
-                                <button x-on:click="text = 'Option 1', value = 'option-1', open = false" class="ly-dark-select-option">Option 1</button>
-                                <button x-on:click="text = 'Option 2', value = 'option-2', open = false" class="ly-dark-select-option">Option 2</button>
-                                <button x-on:click="text = 'Option 3', value = 'option-3', open = false" class="ly-dark-select-option">Option 3</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Separator -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Separator</h1>
-
-                <div class="flex flex-col gap-4">
-                    <span class="ly-separator"></span>
-                    <span class="ly-dark-separator"></span>
-                </div>
-
-            </div>
-
-            <!-- Accordion -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Accordion</h1>
-
-                <div class="flex flex-col gap-4">
-
-                    <div x-data="{open: false}" class="ly-accordion">
-                        <div x-on:click="open = !open" class="ly-accordion-header">
-                            <h1 class="ly-accordion-title">Accordion</h1>
-                            <svg x-bind:class="open ? 'ly-accordion-icon-open' : ''" class="ly-accordion-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                        </div>
-                        <div class="ly-accordion-wrapper" x-bind:class="open ? 'ly-accordion-wrapper-open' : ''">
-                            <div class="ly-accordion-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesenpellat?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div x-data="{open: false}" class="ly-dark-accordion relative">
-                        <div x-on:click="open = !open" class="ly-dark-accordion-header">
-                            <h1 class="ly-dark-accordion-title">Accordion</h1>
-                            <svg x-bind:class="open ? 'ly-accordion-icon-open' : ''" class="ly-dark-accordion-icon" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><g transform="rotate(180 512 512)"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></g></svg>
-                        </div>
-                        <div class="ly-accordion-wrapper" x-bind:class="open ? 'ly-accordion-wrapper-open' : ''">
-                            <div class="ly-dark-accordion-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesenpellat?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Textarea -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Textarea</h1>
-
-
-                <div class="flex flex-col gap-4">
-                    <div class="flex gap-4">
-                        <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
-                        <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
-
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="ly-textarea-resize">
-                            <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-textarea text-xl"></textarea>
-                        </div>
-                        <div class="ly-dark-textarea-resize">
-                            <textarea name="" id="" cols="30" placeholder="Textarea" class="ly-dark-textarea text-xl"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Card -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Card</h1>
-
-                <div class="flex gap-4">
-
-                    <div class="ly-card">
-                        <div class="ly-card-header">
-                            <h1 class="ly-card-title">Card</h1>
-                            <h1 class="ly-card-desc">Card description</h1>
-                        </div>
-                        <div class="ly-card-content">
-                            <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                        </div>
-                        <div class="ly-card-footer justify-between">
-                            <button class="ly-button">Cancel</button>
-                            <button class="ly-dark-button">Button</button>
-                        </div>
-                    </div>
-
-                    <div class="ly-dark-card">
-                        <div class="ly-card-header">
-                            <h1 class="ly-dark-card-title">Card</h1>
-                            <h1 class="ly-dark-card-desc">Card description</h1>
-                        </div>
-                        <div class="ly-card-content">
-                            <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt, inventore ipsum quae ullam voluptatibus !</p>
-                        </div>
-                        <div class="ly-card-footer justify-between">
-                            <button class="ly-dark-button">Cancel</button>
-                            <button class="ly-button">Button</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Dropzone -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Dropzone</h1>
-
-                <div class="flex gap-4">
-
-                    <label for="dropzone" class="ly-dropzone">
-                        <div class="ly-dropzone-content">
-                            <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                            <p class="ly-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                            <p class="ly-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                            <input id="dropzone" type="file" class="ly-dropzone-input" />
-                        </div>
-                    </label>
-
-                    <label for="dropzone-2" class="ly-dark-dropzone">
-                        <div class="ly-dropzone-content">
-                            <svg class="ly-dropzone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                            <p class="ly-dark-dropzone-title"><span class="font-semibold">Click to upload file</span> or drag and drop</p>
-                            <p class="ly-dark-dropzone-desc">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                            <input id="dropzone-2" type="file" class="ly-dark-dropzone-input" />
-                        </div>
-                    </label>
-
-                </div>
-
-            </div>
-
-            <!-- Modal -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Modal</h1>
-
-                <div class="flex gap-4">
-
-                    <div x-data="{ show_modal: false }">
-                        <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
-
-                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                            <div x-on:click="show_modal = false" class="ly-modal-overlay"></div>
-                            <div class="ly-modal-content">
-                                <h1>Modal</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div x-data="{ show_modal: false }">
-                        <button x-on:click="show_modal = true" class="ly-button">Open Modal</button>
-
-                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                            <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-75"></div>
-                            <div class="ly-modal-content">
-                                <h1>Modal</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div x-data="{ show_modal: false }">
-                        <button x-on:click="show_modal = true" class="ly-dark-button">Open Modal</button>
-
-                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                            <div x-on:click="show_modal = false" class="ly-modal-overlay opacity-50"></div>
-                            <div class="ly-dark-modal-content">
-                                <h1>Modal</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div x-data="{ show_modal: false }">
-                        <button x-on:click="show_modal = true" class="ly-button">Open Blurred Modal</button>
-
-                        <div class="ly-modal-container" x-show="show_modal" x-transition.opacity>
-                            <div x-on:click="show_modal = false" class="ly-modal-blurred-overlay"></div>
-                            <div class="ly-modal-content">
-                                <h1>Modal</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Table -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Table</h1>
-
-                <div class="flex flex-col gap-4">
-
-                    <div class="ly-card">
-                        <table class="ly-table">
-                            <thead>
-                                <tr class="ly-table-tr-head">
-                                    <th class="ly-table-th">First name</th>
-                                    <th class="ly-table-th">Last name</th>
-                                    <th class="ly-table-th">Age</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="ly-table-tr">
-                                    <td class="ly-table-td">John</td>
-                                    <td class="ly-table-td">Doe</td>
-                                    <td class="ly-table-td">25</td>
-                                </tr>
-                                <tr class="ly-table-tr">
-                                    <td class="ly-table-td">Jane</td>
-                                    <td class="ly-table-td">Smith</td>
-                                    <td class="ly-table-td">30</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-                    <div class="ly-dark-card">
-                        <table class="ly-dark-table">
-                            <thead>
-                                <tr class="ly-dark-table-tr-head">
-                                    <th class="ly-dark-table-th">First name</th>
-                                    <th class="ly-dark-table-th">Last name</th>
-                                    <th class="ly-dark-table-th">Age</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="ly-dark-table-tr">
-                                    <td class="ly-dark-table-td">John</td>
-                                    <td class="ly-dark-table-td">Doe</td>
-                                    <td class="ly-dark-table-td">25</td>
-                                </tr>
-                                <tr class="ly-dark-table-tr">
-                                    <td class="ly-dark-table-td">Jane</td>
-                                    <td class="ly-dark-table-td">Smith</td>
-                                    <td class="ly-dark-table-td">30</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="ly-card">
-                        <table class="ly-table">
-                            <thead>
-                                <tr class="ly-dark-table-tr-head">
-                                    <th class="ly-dark-table-th">First name</th>
-                                    <th class="ly-dark-table-th">Last name</th>
-                                    <th class="ly-dark-table-th">Age</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="ly-table-tr">
-                                    <td class="ly-table-td">John</td>
-                                    <td class="ly-table-td">Doe</td>
-                                    <td class="ly-table-td">25</td>
-                                </tr>
-                                <tr class="ly-table-tr">
-                                    <td class="ly-table-td">Jane</td>
-                                    <td class="ly-table-td">Smith</td>
-                                    <td class="ly-table-td">30</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Tooltip -->
-            <div class="flex flex-col gap-2">
-                <h1 class="ly-title">Tooltip</h1>
-
-                <div class="flex gap-[50px] py-[25px] flex-col">
-
-                    <div class="flex gap-4">
-                        <div class="ly-tooltip-container">
-                            <button class="ly-button">Button</button>
-                            <span class="ly-tooltip ly-tooltip-t">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-button">Button</button>
-                            <span class="ly-tooltip ly-tooltip-b">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-button">Button</button>
-                            <span class="ly-tooltip ly-tooltip-l">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-button">Button</button>
-                            <span class="ly-tooltip ly-tooltip-r">Hi!</span>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="ly-tooltip-container">
-                            <button class="ly-dark-button">Button</button>
-                            <span class="ly-dark-tooltip ly-tooltip-t">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-dark-button">Button</button>
-                            <span class="ly-dark-tooltip ly-tooltip-b">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-dark-button">Button</button>
-                            <span class="ly-dark-tooltip ly-tooltip-l">Hi!</span>
-                        </div>
-    
-                        <div class="ly-tooltip-container">
-                            <button class="ly-dark-button">Button</button>
-                            <span class="ly-dark-tooltip ly-tooltip-r">Hi!</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-
-        </main>
+        <div class="input-icon">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3m0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8"/></svg>
+            </span>
+            <input error type="text" name="" id="" class="left">
+        </div>
+
+        <div class="input-icon">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3m0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8"/></svg>
+            </span>
+            <input disabled type="text" name="" id="" class="left">
+        </div>
+    </div>
+
+    <div class="container flex-col">
+        <textarea name="" id="" class="textarea"></textarea>
+        <textarea name="" id="" class="textarea" error></textarea>
+        <textarea name="" id="" class="textarea" disabled></textarea>
+    </div>
+
+    <div class="container flex-col">
+        <input type="file" name="" id="" class="input-file">
+        <input type="file" name="" id="" class="input-file" error>
+        <input type="file" name="" id="" class="input-file" disabled>
+    </div>
+
+    <div class="container flex-col">
+        <select class="select">
+            <option value="" hidden disabled selected>Select a number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <select class="select" error>
+            <option value="" hidden disabled selected>Select a number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <select class="select" disabled>
+            <option value="" hidden disabled selected>Select a number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="tooltip-container">
+            <span class="tooltip tooltip-t">Tooltip</span>
+            <button class="btn">Button</button>
+        </div>
+
+        <div class="tooltip-container">
+            <span class="tooltip-alt tooltip-b">Tooltip</span>
+            <button class="btn">Button</button>
+        </div>
+
+        <div class="tooltip-container">
+            <span class="tooltip tooltip-r">Tooltip</span>
+            <button class="btn">Button</button>
+        </div>
+
+        <div class="tooltip-container">
+            <span class="tooltip-alt tooltip-l">Tooltip</span>
+            <button class="btn">Button</button>
+        </div>
+    </div>
+
+
+
+    <div class="container flex-col">
+        <div
+            x-data="{value: 0, min: 0, max: 10}"
+            class="input-number"
+        >
+            <button
+                x-on:click="value <= min ? value = min : value--"
+                x-bind:disabled="value <= min"
+                class="input-number-remove"
+            >
+                -
+            </button>
+
+            <input
+                type="number"
+                x-on:input="$event.target.value > max ? $event.target.value = max : $event.target.value < min ? $event.target.value = min : $event.target.value"
+                x-model="value"
+            />
+
+            <button
+                x-on:click="value >= max ? value = max : value++"
+                class="input-number-add"
+            >
+                +
+            </button>
+        </div>
     </div>
 </body>
 </html>
